@@ -60,7 +60,7 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 
 <div align="center">
 
-[![Goringich's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=goringich&show_icons=true&theme=dark#gh-dark-mode-only&hide=prs,issues)](https://github.com/gorigich/github-readme-stats#gh-dark-mode-only)
+[![Goringich's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=goringich&hide=prs,issues&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/gorigich/github-readme-stats#gh-dark-mode-only)
 
 
 </div>
