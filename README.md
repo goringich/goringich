@@ -12,10 +12,12 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
   - **Backend:** Python (Flask, NumPy, Matplotlib), Node.js, PostgreSQL, MATLAB, C/C++
   - **Tooling:** Git, GitHub, Vite, Gulp-sass, CMS WordPress
   - **Other:** Adaptive design, cross-browser compatibility, responsive development
-  - 
+
 ---
 
-## Languages and Tools 🛠️
+## 🌐 Languages and Tools 🛠️
+
+<div align="center">
 
 ### Backend:
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -39,26 +41,36 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 ![WebAssembly](https://img.shields.io/badge/-WebAssembly-654FF0?style=for-the-badge&logo=webassembly&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
+</div>
+
 ---
 
-## GitHub Statistics 📊
+## 📊 GitHub Statistics
+
+<div align="center">
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=IgorKim&layout=compact&theme=radical)
 ![Igor's GitHub Stats](https://github-readme-stats.vercel.app/api?username=IgorKim&show_icons=true&theme=radical)
 
+</div>
+
 ---
 
-## Let's Connect 🤝
+## 🤝 Let's Connect
 
-<div id="badges" align="center">
+<div align="center">
   <a href="https://t.me/a1gorithms">
-    <img src="https://img.shields.io/badge/telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="tg: @SubjectSpirit"/>
+    <img src="https://img.shields.io/badge/telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram"/>
   </a>
   <a href="https://vk.com/gogotka">
-    <img src="https://img.shields.io/badge/vk-blue?style=for-the-badge&logo=vk&logoColor=white" alt="vk: subjectsp1rit"/>
+    <img src="https://img.shields.io/badge/vk-blue?style=for-the-badge&logo=vk&logoColor=white" alt="VK"/>
   </a>
+</div>
 
 ---
 
-Thank you for visiting! 😄 Feel free to explore my repositories and reach out if you want to collaborate or discuss any project ideas!
+<div align="center">
+  <h3>Thank you for visiting! 😄</h3>
+  <p>Feel free to explore my repositories and reach out if you want to collaborate or discuss any project ideas!</p>
+</div>
 
