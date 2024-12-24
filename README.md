@@ -49,8 +49,8 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 
 <div align="center">
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=IgorKim&layout=compact&theme=radical)
-![Igor's GitHub Stats](https://github-readme-stats.vercel.app/api?username=IgorKim&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=${GITHUB_USERNAME}&layout=compact&theme=radical)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=${GITHUB_USERNAME}&show_icons=true&theme=radical)
 
 </div>
 
