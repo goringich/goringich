@@ -7,16 +7,12 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 ## About Me 🌟
 
 - 🎓 **Education:** HSE, Faculty of Computer Science, Software Engineering (`Class of 2027`)
-- 🌐 **Portfolio Site:** [potyakin.ru](http://potyakin.ru)
 - 💻 **Primary Skills:**
   - **Frontend:** HTML, CSS3, SCSS, JavaScript/TypeScript, React, Redux, jQuery, WebAssembly
   - **Backend:** Python (Flask, NumPy, Matplotlib), Node.js, PostgreSQL, MATLAB, C/C++
   - **Tooling:** Git, GitHub, Vite, Gulp-sass, CMS WordPress
   - **Other:** Adaptive design, cross-browser compatibility, responsive development
-
-- 🚀 **Current Focus:**
-  Developing an advanced **Algorithmic Web Course** with visualization and interactive features using modern tools like Vite, React, and WebAssembly.
-
+  - 
 ---
 
 ## Languages and Tools 🛠️
@@ -54,9 +50,7 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 
 ## Let's Connect 🤝
 
-- [Telegram](https://t.me/yourusername)
-- [VK](https://vk.com/yourusername)
-- [Portfolio Site](http://potyakin.ru)
+- [Telegram](![image](https://github.com/user-attachments/assets/5d771001-122a-4204-ad54-598e8ab6776b))
 
 ---
 
