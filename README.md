@@ -50,7 +50,7 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 
 ## Let's Connect 🤝
 
-- [Telegram]![image](https://github.com/user-attachments/assets/5d771001-122a-4204-ad54-598e8ab6776b)
+- ![Telegram](https://t.me/a1gorithms)
 
 ---
 
