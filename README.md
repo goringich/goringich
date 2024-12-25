@@ -34,6 +34,7 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 ![Gulp](https://img.shields.io/badge/-Gulp-CF4647?style=for-the-badge&logo=gulp&logoColor=white)
 ![WebAssembly](https://img.shields.io/badge/-WebAssembly-654FF0?style=for-the-badge&logo=webassembly&logoColor=white)
 ![WordPress](https://img.shields.io/badge/-WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
+![Web Components](https://img.shields.io/badge/-Web%20Components-4285F4?style=for-the-badge&logo=webcomponents.org&logoColor=white)
 
 
 ### Backend:
