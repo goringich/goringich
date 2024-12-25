@@ -59,12 +59,23 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 ## 📊 GitHub Statistics
 
 <div align="center">
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=goringich&layout=pie&exclude_repo=open-server,hram-only&cache_seconds=1800)](https://github.com/goringich/github-readme-stats)
-[![Goringich's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=goringich&hide=prs,issues&show_icons=true&theme=dark#gh-dark-mode-only&cache_seconds=1800)](https://github.com/gorigich/github-readme-stats#gh-dark-mode-only)
-
-
+  <table style="border-collapse: collapse; border: none;">
+    <tr>
+      <td style="border: none;">
+        <a href="https://github.com/goringich/github-readme-stats">
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=goringich&layout=pie&exclude_repo=open-server,hram-only&cache_seconds=1800" alt="Top Langs" />
+        </a>
+      </td>
+      <td style="border: none;">
+        <a href="https://github.com/goringich/github-readme-stats">
+          <img src="https://github-readme-stats.vercel.app/api?username=goringich&hide=prs,issues&show_icons=true&theme=dark&cache_seconds=1800" alt="GitHub Stats" />
+        </a>
+      </td>
+    </tr>
+  </table>
 </div>
+
+
 
 ---
 
