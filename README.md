@@ -10,7 +10,7 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 - 💻 **Primary Skills:**
   
   - **Frontend:** HTML, CSS3/SCSS, JavaScript/TypeScript, React(Hooks, Lazy, Suspense, MUI), Redux, jQuery, WebAssembly, Web Components
-  - **Backend:** Python (Flask, NumPy, Matplotlib), Node.js, PostgreSQL, MATLAB, C/C++
+  - **Backend:** Python (Flask, NumPy, Matplotlib), Node.js, PHP, Java Spring, PostgreSQL, MATLAB, C/C++
   - **Tooling:** Git, GitHub, Vite, Gulp-sass, CMS WordPress
   - **Other:** Adaptive design, cross-browser compatibility, responsive development
 
