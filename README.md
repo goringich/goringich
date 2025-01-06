@@ -11,7 +11,7 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
   
   - **Frontend:** HTML, CSS3/SCSS, JavaScript/TypeScript, React(Hooks, Lazy, Suspense, MUI), React Native(Expo), Redux, jQuery, WebAssembly (Emscripten), Web Components
   - **Backend:** Python (Flask, NumPy, Matplotlib), Node.js, PHP, Java Spring, PostgreSQL, MATLAB, C/C++
-  - **Tooling:** Git, GitHub, Vite, Gulp-sass, CMS WordPress
+  - **Tooling:** Git, GitHub, Vite, Gulp-sass, CMS WordPress, npm, yarn
   - **Other:** Adaptive design, cross-browser compatibility, responsive development
 
 ---
