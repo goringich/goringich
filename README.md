@@ -1,18 +1,39 @@
-# Hi there! 👋
+# Hi there! 👋  
 
-Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knack for Fullstack development and a student at the Higher School of Economics. Here, you'll find projects showcasing my passion for web development, algorithms, and creating innovative solutions.
+Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knack for Fullstack development and a student at the Higher School of Economics. Here, you'll find projects showcasing my passion for web development, algorithms, and creating innovative solutions.  
 
 ---
 
-## About Me 🌟
+## About Me 🌟  
 
-- 🎓 **Education:** HSE, Faculty of Computer Science, Software Engineering (`Class of 2027`)
-- 💻 **Primary Skills:**
-  
-  - **Frontend:** HTML, CSS3/SCSS, JavaScript/TypeScript, React(Hooks, Lazy, Suspense, MUI), React Native(Expo, Metro Bundler, Babel), Redux, jQuery, WebAssembly (Emscripten), Web Components
-  - **Backend:** Python (Flask, NumPy, Matplotlib), Node.js, PHP, Java Spring, PostgreSQL, MATLAB, C/C++
-  - **Tooling:** Git, GitHub, Vite, Gulp-sass, Babel, Expo, Metro Bundler, CMS WordPress, npm, yarn
-  - **Other:** Adaptive design, cross-browser compatibility, responsive development
+- 🎓 **Education:** HSE, Faculty of Computer Science, Software Engineering (`Class of 2027`)  
+- 🚀 **Interests:** Web development, algorithms, performance optimization, interactive UI/UX  
+- 🌍 **Looking for:** Exciting projects, open-source collaborations, and new challenges  
+
+---
+
+## 💻 Tech Stack  
+
+### Frontend  
+- **Languages & Core:** HTML, CSS3/SCSS, JavaScript/TypeScript  
+- **Frameworks & Libraries:** React (Hooks, Lazy, Suspense, MUI), React Native (Expo, Metro Bundler, Babel), Redux, jQuery, Web Components  
+- **Performance & Optimization:** WebAssembly (Emscripten)  
+- **Development Practices:** Adaptive design, cross-browser compatibility, responsive development  
+
+### Backend  
+- **Languages:** Python, Node.js, PHP, Java, C/C++  
+- **Frameworks:** Flask, Java Spring  
+- **Databases:** PostgreSQL  
+- **Scientific & Analytical Tools:** NumPy, Matplotlib, MATLAB  
+
+### Tooling & Workflow  
+- **Version Control:** Git, GitHub, Bitbucket  
+- **Build & Bundlers:** Vite, Gulp, Babel  
+- **Package Managers:** npm, yarn  
+- **Task Management & Collaboration:** Jira, Meet  
+- **CMS & Platforms:** WordPress  
+- **Mobile Development:** Expo, Metro Bundler 
+
 
 ---
 
