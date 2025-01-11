@@ -9,9 +9,9 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 - 🎓 **Education:** HSE, Faculty of Computer Science, Software Engineering (`Class of 2027`)
 - 💻 **Primary Skills:**
   
-  - **Frontend:** HTML, CSS3/SCSS, JavaScript/TypeScript, React(Hooks, Lazy, Suspense, MUI), React Native(Expo, Metro Bundler), Redux, jQuery, WebAssembly (Emscripten), Web Components
+  - **Frontend:** HTML, CSS3/SCSS, JavaScript/TypeScript, React(Hooks, Lazy, Suspense, MUI), React Native(Expo, Metro Bundler, Babel), Redux, jQuery, WebAssembly (Emscripten), Web Components
   - **Backend:** Python (Flask, NumPy, Matplotlib), Node.js, PHP, Java Spring, PostgreSQL, MATLAB, C/C++
-  - **Tooling:** Git, GitHub, Vite, Gulp-sass, CMS WordPress, npm, yarn
+  - **Tooling:** Git, GitHub, Vite, Gulp-sass, Babel, Expo, Metro Bundler, CMS WordPress, npm, yarn
   - **Other:** Adaptive design, cross-browser compatibility, responsive development
 
 ---
