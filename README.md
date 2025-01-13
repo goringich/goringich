@@ -15,7 +15,7 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 ## 💻 Tech Stack  
 
 ### Frontend  
-- **Languages & Core:** HTML, CSS3/SCSS, JavaScript/TypeScript  
+- **Languages & Core:** HTML5, CSS3/SCSS, JavaScript/TypeScript  
 - **Frameworks & Libraries:** React (Hooks, Lazy, Suspense, MUI), React Native (Expo, Metro Bundler, Babel), Redux, jQuery, Web Components  
 - **Performance & Optimization:** WebAssembly (Emscripten)  
 - **Development Practices:** Adaptive design, cross-browser compatibility, responsive development  
