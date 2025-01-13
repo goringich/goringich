@@ -18,7 +18,8 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 - **Languages & Core:** HTML5, CSS3/SCSS, JavaScript/TypeScript  
 - **Frameworks & Libraries:** React (Hooks, Lazy, Suspense, MUI), React Native (Expo, Metro Bundler, Babel), Redux, jQuery, Web Components  
 - **Performance & Optimization:** WebAssembly (Emscripten)  
-- **Development Practices:** Adaptive design, cross-browser compatibility, responsive development  
+- **Development Practices:** Adaptive design, cross-browser compatibility, responsive development
+- **Telegram Mini Apps:** Web Apps, Telegram API, Bot API
 
 ### Backend  
 - **Languages:** Python, Node.js, PHP, Java, C/C++  
