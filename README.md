@@ -29,7 +29,7 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 
 ### Tooling & Workflow  
 - **Version Control:** Git, GitHub, Bitbucket  
-- **Build & Bundlers:** Vite, Gulp, Babel  
+- **Build & Bundlers:** Vite, Webpack, Gulp, Babel  
 - **Package Managers:** npm, yarn  
 - **Task Management & Collaboration:** Jira, Meet  
 - **CMS & Platforms:** WordPress  
