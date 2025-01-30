@@ -22,8 +22,8 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 - **Telegram Mini Apps:** Web Apps, Telegram API, Bot API
 
 ### Backend  
-- **Languages:** Python, Node.js, PHP, Go, Java, C/C++  
-- **Frameworks:** Flask, Java Spring  
+- **Languages:** Python, Node.js, PHP, Golang, Java, C/C++  
+- **Frameworks:** Gin (Golang), Flask (Python), Spring (Java)   
 - **Databases:** PostgreSQL  
 - **Scientific & Analytical Tools:** NumPy, Matplotlib, MATLAB  
 
