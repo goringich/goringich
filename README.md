@@ -92,12 +92,14 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
         </a>
       </td>-->
      <!-- <td style="border: none;"> -->
-        <a href="https://github.com/goringich/github-readme-stats">
-          <img src="https://github-readme-stats.vercel.app/api?username=goringich&hide=prs,issues&show_icons=true&theme=dark&cache_seconds=1800" alt="GitHub Stats" loading="lazy"/>
-        </a>
+  <a href="https://github.com/goringich/github-readme-stats">
+  <img src="https://github-readme-stats.vercel.app/api?username=goringich&hide=prs,issues&show_icons=true&theme=dark&include_all_commits=true&count_private=true&cache_seconds=0" alt="GitHub Stats" />
+</a>
+
+
 
 <!--       </td> -->
-    </tr>
+
   </table>
 </div>
 
