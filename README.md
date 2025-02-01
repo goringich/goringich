@@ -122,3 +122,4 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
   <p>Feel free to explore my repositories and reach out if you want to collaborate or discuss any project ideas!</p>
 </div>
 
+ [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Im+curently+working+on+this+page)](https://git.io/typing-svg)
