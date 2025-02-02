@@ -9,9 +9,12 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 - 🎓 **Education:** HSE, Faculty of Computer Science, Software Engineering (`Class of 2027`)  
 - 🚀 **Interests:** Web development, algorithms, performance optimization, interactive UI/UX  
 - 🌍 **Looking for:** Exciting projects, open-source collaborations, and new challenges
-- 🏆 Experience: Led the development of an interactive web course with an algorithm visualization engine, managing both frontend (React, React-konva) and backend (Go, Redis, PostgreSQL) architecture.
+- 🏆 **Experience:**  
+  - **Technical Lead:** Led the development of an interactive web course with an **algorithm visualization engine**, managing both frontend (React, React-konva) and backend (Go, Redis, PostgreSQL) architecture.  
+  - **Frontend Developer at T-Bank:** Contributed to the development of a **lunch partner matching service**, focusing on UI/UX design, performance, and seamless user interactions.  
 
----
+
+
 
 ## 💻 Tech Stack  
 
