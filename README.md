@@ -10,7 +10,7 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 - 🚀 **Interests:** Web development, algorithms, performance optimization, interactive UI/UX  
 - 🌍 **Looking for:** Exciting projects, open-source collaborations, and new challenges
 - 🏆 **Experience:**
-- 
+  
   - **Technical Lead & Fullstack Developer:** Led the development of an **interactive web course with an algorithm visualization engine**, managing both frontend (React, React-konva) and backend (Go, Redis, PostgreSQL) architecture. Designed system architecture, optimized performance, and ensured seamless user interactions.  
   - **Frontend Developer at T-Bank:** Contributed to the development of a **lunch partner matching service**, focusing on UI/UX design, performance, and seamless user interactions.  
  
