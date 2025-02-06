@@ -13,7 +13,7 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
   
   - **Technical Lead & Fullstack Developer (7 months):** Led the development of an **interactive web course with an algorithm visualization engine**, managing both frontend (React, React-konva) and backend (Go, Redis, PostgreSQL) architecture. Designed system architecture, optimized performance, and ensured seamless user interactions.  
   - **Frontend Developer at T-Bank (5 months):** Contributed to the development of a **lunch partner matching service**, focusing on UI/UX design, performance, and seamless user interactions.
-  - **Freelance Frontend Developer (6 months):**  Developed responsive landing pages and multi-page websites, ensuring high-quality layouts, SEO optimization, and cross-browser compatibility. Created custom Telegram applications, integrating bot automation, API interactions, and optimized UI for an enhanced user experience.
+  - **Freelance Frontend Developer (4 months):**  Developed responsive landing pages and multi-page websites, ensuring high-quality layouts, SEO optimization, and cross-browser compatibility. Created custom Telegram applications, integrating bot automation, API interactions, and optimized UI for an enhanced user experience.
  
 
 
