@@ -54,8 +54,8 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 - **Mobile Development**: React Native (Expo, Metro Bundler, Babel)  
 
 ## Tooling & Workflow
-- **Version Control**: Git, GitHub, Bitbucket  
-- **Build & Bundlers**: Vite, Webpack, Gulp, Babel  
+- **Version Control**: Git, GitHub, Gitlab  
+- **Build & Bundlers**: Vite, Webpack, Gulp  
 - **Package Managers**: npm, yarn  
 - **Task Management & Collaboration**: Jira, Weeek, Meet  
 - **CMS & Platforms**: WordPress  
