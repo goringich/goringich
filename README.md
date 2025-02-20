@@ -21,27 +21,46 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 
 ## 💻 Tech Stack  
 
-### Frontend  
-- **Languages & Core:** HTML5, CSS3/SCSS, JavaScript/TypeScript  
-- **Frameworks & Libraries:** React (Hooks, Lazy, Suspense, MUI), React Native (Expo, Metro Bundler, Babel), Redux, jQuery, Web Components  
-- **Performance & Optimization:** WebAssembly (Emscripten)  
-- **Development Practices:** Adaptive design, cross-browser compatibility, responsive development
-- **Telegram Mini Apps:** Web Apps, Telegram API, Bot API
+## Frontend  
+- ### Languages & Core  
+  - HTML5, CSS3/SCSS, JavaScript/TypeScript  
 
-### Backend  
-- **Languages:** Python, Node.js, PHP, Golang, Java, C/C++  
-- **Frameworks:** Gin (Golang), Flask (Python), Spring (Java)   
-- **Databases:** PostgreSQL  
-- **Scientific & Analytical Tools:** NumPy, Matplotlib, MATLAB  
+- ### Frameworks & Libraries  
+  - React (Hooks, custom-hooks, Lazy, Suspense, MUI, react-hook-form, react-table, react-router, react-query)
+  - Redux Toolkit  
+  - PixiJs/react-pixi, react-konva  
+  - Framer Motion   
+  - axios, mock-websocket-server  
+  - jQuery
+  - Web Components 
 
-### Tooling & Workflow  
-- **Version Control:** Git, GitHub, Bitbucket  
-- **Build & Bundlers:** Vite, Webpack, Gulp, Babel  
-- **Package Managers:** npm, yarn  
-- **Task Management & Collaboration:** Jira, Weeek, Meet  
-- **CMS & Platforms:** WordPress  
-- **Mobile Development:** Expo, Metro Bundler
-- **UI/UX & Prototyping**: Figma, Photoshop 
+- ### Performance & Optimization  
+  - WebAssembly (Emscripten)  
+
+- ### Development Practices  
+  - Adaptive design, cross-browser compatibility, responsive development  
+
+- ### Telegram Mini Apps  
+  - Web Apps, Telegram API, Bot API  
+
+## Backend  
+- ### Primary Technologies  
+  - Golang (Gin)  
+  - Python (Flask)  
+  - PostgreSQL  
+
+## Additional Experience & Familiar Technologies
+- **Backend & General Development**: Node.js, Java (Spring), PHP, C/C++, NumPy, Matplotlib, MATLAB  
+- **Mobile Development**: React Native (Expo, Metro Bundler, Babel)  
+
+## Tooling & Workflow
+- **Version Control**: Git, GitHub, Bitbucket  
+- **Build & Bundlers**: Vite, Webpack, Gulp, Babel  
+- **Package Managers**: npm, yarn  
+- **Task Management & Collaboration**: Jira, Weeek, Meet  
+- **CMS & Platforms**: WordPress  
+- **UI/UX & Prototyping**: Figma, Photoshop  
+
 
 
 ---
