@@ -30,7 +30,7 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
   - Redux Toolkit  
   - PixiJs/react-pixi, react-konva  
   - Framer Motion   
-  - axios, mock-websocket-server  
+  - axios, WebSocket
   - jQuery
   - Web Components 
 
