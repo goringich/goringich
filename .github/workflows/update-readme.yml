@@ -20,9 +20,15 @@ jobs:
         echo "Обновляем GitHub Stats"
         curl -s "https://github-readme-stats.vercel.app/api?username=goringich&hide=prs,issues&show_icons=true&theme=dark&cache_seconds=0&token=$GH_STATS_TOKEN" -o stats.svg
 
+    - name: Fetch Snake Animation
+      run: |
+        echo "Обновляем змейку"
+        curl -s "https://github.com/goringich/snk/raw/output/github-contribution-grid-snake.svg" -o snake.svg
+
     - name: Update README.md
       run: |
         sed -i 's|<img src=".*github-readme-stats.*"|<img src="./stats.svg"|' README.md
+        sed -i 's|<img src=".*github-contribution-grid-snake.*"|<img src="./snake.svg"|' README.md
 
     - name: Commit and Push Changes
       env:
@@ -30,6 +36,6 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add README.md stats.svg
-        git commit -m "Update GitHub Stats in README" || echo "No changes to commit"
+        git add README.md stats.svg snake.svg
+        git commit -m "Update GitHub Stats and Snake Animation" || echo "No changes to commit"
         git push origin HEAD || echo "No changes to push"
