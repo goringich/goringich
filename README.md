@@ -61,7 +61,13 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 - **CMS & Platforms**: WordPress  
 - **UI/UX & Prototyping**: Figma, Photoshop  
 
+## **🛠️ Explored, but Not an Expert**  
 
+### **Backend & Databases**  
+- gRPC (protobuf)  
+
+### **DevOps & CI/CD**  
+- Docker Compose  
 
 ---
 
@@ -102,8 +108,6 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 ![MATLAB](https://img.shields.io/badge/-MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-
-
 </div>
 
 ---
