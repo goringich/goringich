@@ -30,7 +30,7 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
   - Redux Toolkit  
   - PixiJs/react-pixi, react-konva  
   - Framer Motion   
-  - Axios (REST API), WebSocket (Real-time API)
+  - Axios (REST API), WebSocket (Real-time API), gRPC (protobuf)
   - jQuery
   - Web Components 
 
@@ -60,14 +60,6 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
 - **Task Management & Collaboration**: Jira, Weeek, Meet  
 - **CMS & Platforms**: WordPress  
 - **UI/UX & Prototyping**: Figma, Photoshop  
-
-## **🛠️ Explored, but Not an Expert**  
-
-### **Backend & Databases**  
-- gRPC (protobuf)  
-
-### **DevOps & CI/CD**  
-- Docker Compose  
 
 ---
 
