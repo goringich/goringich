@@ -14,6 +14,8 @@ Welcome to my GitHub profile! I'm **Igor Kim**, a Frontend Developer with a knac
   - **Technical Lead & Fullstack Developer (7 months):** Led the development of an **interactive web course with an algorithm visualization engine**, managing both frontend (React, React-konva) and backend (Go, Redis, PostgreSQL) architecture. Designed system architecture, optimized performance, and ensured seamless user interactions.  
   - **Frontend Developer at T-Bank (Academic Project, 5 months):** Contributed to the development of a **lunch partner matching service**, focusing on UI/UX design, performance, and seamless user interactions.
   - **Freelance Frontend Developer (4 months):**  Developed responsive landing pages and multi-page websites, ensuring high-quality layouts, SEO optimization, and cross-browser compatibility. Created custom Telegram applications, integrating bot automation, API interactions, and optimized UI for an enhanced user experience.
+  - **Frontend Developer at Neimark & Yadro (IoT Project, 9 months):** Developed a **network management system (NMS)** for microcontroller-based devices, providing real-time control and monitoring through a **React + TypeScript + Redux Toolkit + React Query + PixiJS** interface. Designed an interactive visualization of the network topology and implemented dynamic configuration panels with WebSocket-based updates. Collaborated with backend engineers on a **Go microservices architecture** integrated with **Redis** and **PostgreSQL**, ensuring high scalability, fault tolerance, and smooth synchronization between the frontend and backend.
+
  
 
 
