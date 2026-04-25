@@ -133,8 +133,8 @@ Collaborated on **Go microservices architecture** integrated with **Redis and Po
 ## Contribution activity
 
 <div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=goringich&theme=tokyo-night&hide_border=true" alt="GitHub activity graph" />
+  
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=goringich&theme=tokyo-night&hide_border=true&area=true&line=00E7FF&point=FFFFFF&custom_title=Contribution%20Activity%20(Last%20Year)" />
 
 </div>
 
