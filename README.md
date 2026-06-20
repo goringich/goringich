@@ -46,11 +46,11 @@ I build **interactive web interfaces**, **algorithm visualizations**, **real-tim
 
 🏆 **Fullstack Developer at YADRO / Radio Gigabit**
 **November 2025 - May 2026**
-Worked on fullstack engineering tasks, focusing on frontend development, backend integration, real-time interfaces, Linux-oriented workflows, and internal engineering tools.
+Worked on fullstack engineering tasks, focusing on frontend (**React, MobX**) development, backend integration (**Java Spring**), real-time interfaces, Linux-oriented workflows, and internal engineering tools.
 
 🏆 **Yocto / Linux Development at YADRO / Radio Gigabit November**
 **May 2026 - Present**
-Currently working with **Yocto Linux**, reproducible build environments, embedded-oriented workflows, low-level tooling, Docker-based isolation, and Linux development automation.
+Currently working with **Yocto Linux**, reproducible build environments, embedded-oriented workflows, low-level tooling, and Linux development automation.
 
 🏆 **Technical Lead & Fullstack Developer**
 **7 months**
