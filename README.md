@@ -24,7 +24,7 @@
 
 ### Frontend Developer | Fullstack Developer | HSE Software Engineering Student
 
-I build **interactive web interfaces**, **algorithm visualizations**, **real-time dashboards**, **fullstack systems**, **Linux tooling**, and **local AI workflows** with React, TypeScript, Python, WebSocket, PixiJS, and React Konva.
+I build **interactive web interfaces**, **algorithm visualizations**, **real-time dashboards**, **fullstack systems**, **Linux tooling**, and **local AI workflows** with React, TypeScript, Python, Go, PostgreSQL, Redis, WebSocket, PixiJS, and React Konva.
 
 </div>
 
@@ -46,11 +46,11 @@ I build **interactive web interfaces**, **algorithm visualizations**, **real-tim
 
 🏆 **Fullstack Developer at YADRO / Radio Gigabit**
 **November 2025 - May 2026**
-Worked on fullstack engineering tasks, focusing on frontend development (**React, MobX**), backend integration (**Java Spring**) and internal engineering tools.
+Worked on fullstack engineering tasks, focusing on frontend development, backend integration, real-time interfaces, Linux-oriented workflows, and internal engineering tools.
 
 🏆 **Yocto / Linux Development**
 **May 2026 - Present**
-Currently working with **Yocto Linux**, reproducible build environments, embedded-oriented workflows, low-level tooling and Linux development automation.
+Currently working with **Yocto Linux**, reproducible build environments, embedded-oriented workflows, low-level tooling, Docker-based isolation, and Linux development automation.
 
 🏆 **Technical Lead & Fullstack Developer**
 **7 months**
@@ -196,16 +196,6 @@ Developed a **network management system (NMS)** for microcontroller-based device
 <br />
 
 <img src="https://streak-stats.demolab.com?user=goringich&theme=tokyonight&hide_border=true&background=0D1117&ring=00E5FF&fire=00E5FF&currStreakLabel=00E5FF" alt="GitHub streak" />
-
-</div>
-
----
-
-## GitHub trophies
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=goringich&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1&column=6" alt="GitHub trophies" />
 
 </div>
 
