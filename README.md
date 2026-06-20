@@ -44,13 +44,17 @@ I build **interactive web interfaces**, **algorithm visualizations**, **real-tim
 
 ## Experience
 
+🏆 **Yocto / Linux Development at YADRO / Radio Gigabit November**
+**May 2026 - Present**
+Currently working with **Yocto Linux**, reproducible build environments, embedded-oriented workflows, low-level tooling, and Linux development automation.
+
 🏆 **Fullstack Developer at YADRO / Radio Gigabit**
 **November 2025 - May 2026**
 Worked on fullstack engineering tasks, focusing on frontend (**React, MobX**) development, backend integration (**Java Spring**), real-time interfaces, Linux-oriented workflows, and internal engineering tools.
 
-🏆 **Yocto / Linux Development at YADRO / Radio Gigabit November**
-**May 2026 - Present**
-Currently working with **Yocto Linux**, reproducible build environments, embedded-oriented workflows, low-level tooling, and Linux development automation.
+🏆 **Frontend Developer at Neimark & YADRO (IoT Project)**
+**January 2025 - November 2025**
+Developed a **network management system (NMS)** for microcontroller-based devices with real-time monitoring and control via **React + TypeScript + Redux Toolkit + React Query + PixiJS**. Designed **interactive network topology visualization** and implemented **dynamic configuration panels with WebSocket updates**.
 
 🏆 **Technical Lead & Fullstack Developer**
 **7 months**
@@ -63,10 +67,6 @@ Contributed to the development of a **lunch partner matching service**, focusing
 🏆 **Freelance Frontend Developer**
 **4 months**
 Developed **responsive landing pages and multi-page websites**, ensuring high-quality layouts, SEO optimization, and cross-browser compatibility. Built **Telegram applications** with bot automation, API integrations, and optimized UI/UX.
-
-🏆 **Frontend Developer at Neimark & YADRO (IoT Project)**
-**9 months**
-Developed a **network management system (NMS)** for microcontroller-based devices with real-time monitoring and control via **React + TypeScript + Redux Toolkit + React Query + PixiJS**. Designed **interactive network topology visualization** and implemented **dynamic configuration panels with WebSocket updates**.
 
 ---
 
