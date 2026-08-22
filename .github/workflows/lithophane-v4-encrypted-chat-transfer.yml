@@ -1,0 +1,64 @@
+name: Temporary encrypted Lithophane V4 chat transport
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, reopened, synchronize]
+    paths:
+      - '.github/lithophane-v4-encrypted-chat-transfer-request.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout exact encrypted transport request
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Resolve encrypted request
+        id: request
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          request='.github/lithophane-v4-encrypted-chat-transfer-request.txt'
+          test -s "$request"
+          enabled="$(awk -F= '$1 == "enabled" {print substr($0, index($0, "=") + 1); exit}' "$request")"
+          source_sha="$(awk -F= '$1 == "source_sha" {print substr($0, index($0, "=") + 1); exit}' "$request")"
+          ciphertext_sha="$(awk -F= '$1 == "sha256" {print substr($0, index($0, "=") + 1); exit}' "$request")"
+          url="$(awk -F= '$1 == "url" {print substr($0, index($0, "=") + 1); exit}' "$request")"
+          [[ "$enabled" == 'true' || "$enabled" == 'false' ]]
+          [[ "$source_sha" =~ ^[0-9a-f]{40}$ ]]
+          if [[ "$enabled" == 'true' ]]; then
+            [[ "$ciphertext_sha" =~ ^[0-9a-f]{64}$ ]]
+            [[ "$url" == https://release-assets.githubusercontent.com/* ]]
+          fi
+          printf 'enabled=%s\nsource_sha=%s\nsha256=%s\nurl=%s\n' "$enabled" "$source_sha" "$ciphertext_sha" "$url" >> "$GITHUB_OUTPUT"
+
+      - name: Download exact encrypted visual pack
+        if: steps.request.outputs.enabled == 'true'
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          mkdir -p delivery
+          file='delivery/lithophane-v4-exact-visual-pack.tar.gz.enc'
+          curl -fL --retry 3 --retry-delay 1 -o "$file" '${{ steps.request.outputs.url }}'
+          test -s "$file"
+          actual="$(sha256sum "$file" | awk '{print $1}')"
+          [[ "$actual" == '${{ steps.request.outputs.sha256 }}' ]]
+          echo "ENCRYPTED_V4_VISUAL_TRANSPORT_PASS source=${{ steps.request.outputs.source_sha }} sha256=$actual"
+
+      - name: Upload encrypted visual pack
+        if: steps.request.outputs.enabled == 'true'
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: lithophane-v4-encrypted-${{ steps.request.outputs.source_sha }}
+          path: delivery/lithophane-v4-exact-visual-pack.tar.gz.enc
+          if-no-files-found: error
+          retention-days: 1
