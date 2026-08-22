@@ -1,0 +1,5 @@
+enabled=false
+source_sha=b6b567105e29aac46adf683f50e109dbbb062e36
+release_tag=gift-room-portfolio-160-b6b567105e29
+assets_begin
+assets_end
