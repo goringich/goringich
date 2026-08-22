@@ -1,0 +1,32 @@
+name: Temporary encrypted Lithophane chat artifact
+
+on:
+  pull_request:
+    branches: [main]
+    types: [synchronize]
+    paths:
+      - '.github/workflows/lithophane-encrypted-chat-artifact.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Download encrypted exact V4 preview package
+        run: |
+          set -Eeuo pipefail
+          curl -fL --retry 2 --retry-delay 1 \
+            -o lithophane-v4-exact-renders.tar.gz.enc \
+            'https://release-assets.githubusercontent.com/github-production-release-asset/1115718280/697f9b00-a531-400d-9960-835c79eab3bc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-22T20%3A02%3A41Z&rscd=attachment%3B+filename%3Dlithophane-v4-exact-renders.tar.gz.enc&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-22T19%3A01%3A49Z&ske=2026-08-22T20%3A02%3A41Z&sks=b&skv=2018-11-09&sig=QULJVNUSXdAvDOx1IkqmUW7%2FM0%2FWHqcd1fi%2BfzEsekE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NzQyNTY5NiwibmJmIjoxNzg3NDI1Mzk2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.EyDoj7lTPz2qSUwRvB54HBCml_nCwzBuddxHLyPcjM0&response-content-disposition=attachment%3B%20filename%3Dlithophane-v4-exact-renders.tar.gz.enc&response-content-type=application%2Foctet-stream'
+          echo '9130fc30c9d8cc4aee7bdd6a0dfc606e45c56a81698b094dca614b12c4cc873e  lithophane-v4-exact-renders.tar.gz.enc' | sha256sum -c -
+      - name: Upload ciphertext only
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: lithophane-v4-exact-renders-encrypted
+          path: lithophane-v4-exact-renders.tar.gz.enc
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 0
