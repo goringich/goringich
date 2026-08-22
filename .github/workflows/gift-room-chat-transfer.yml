@@ -3,8 +3,9 @@ name: Temporary Gift Room Chat File Transport
 on:
   pull_request:
     branches: [main]
+    types: [opened, reopened, synchronize]
     paths:
-      - '.github/workflows/gift-room-chat-transfer.yml'
+      - '.github/gift-room-chat-transfer-request.txt'
 
 permissions:
   contents: read
@@ -14,42 +15,85 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Download exact public-safe MP4 candidates
-        shell: bash
-        run: |
-          set -Eeuo pipefail
-          mkdir -p delivery
-          curl -fL --retry 3 --retry-delay 1 -o delivery/gift-room-portfolio-all-of-us.mp4 'https://release-assets.githubusercontent.com/github-production-release-asset/1115718280/1e60869d-1211-4c86-bde9-dd071e067457?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-22T17%3A24%3A53Z&rscd=attachment%3B+filename%3Dgift-room-portfolio-all-of-us.mp4&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-22T16%3A24%3A29Z&ske=2026-08-22T17%3A24%3A53Z&sks=b&skv=2018-11-09&sig=afSSKOKcrBGV%2FfOyzsJleytZ9qgBqNRi1ori5rSQeuc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NzQxNjY3MSwibmJmIjoxNzg3NDE2MzcxLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.CE0eN9zw80i4YE6bcnUG5IQfk3u1ZjXd9EEogV5U2eE&response-content-disposition=attachment%3B%20filename%3Dgift-room-portfolio-all-of-us.mp4&response-content-type=application%2Foctet-stream'
-          curl -fL --retry 3 --retry-delay 1 -o delivery/gift-room-portfolio-anniversary-panic.mp4 'https://release-assets.githubusercontent.com/github-production-release-asset/1115718280/da92323c-a241-4aaa-9078-ef0aca7abb50?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-22T17%3A16%3A02Z&rscd=attachment%3B+filename%3Dgift-room-portfolio-anniversary-panic.mp4&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-22T16%3A15%3A47Z&ske=2026-08-22T17%3A16%3A02Z&sks=b&skv=2018-11-09&sig=gDh1nlQdh%2BXt5LATJIIJvR6i5pqJiaWnftVboaugZKk%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NzQxNjY3MiwibmJmIjoxNzg3NDE2MzcyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-cZJ4z0XJoRWD_yYSyACW8kNS73eaYtzDhMTqkODXd0&response-content-disposition=attachment%3B%20filename%3Dgift-room-portfolio-anniversary-panic.mp4&response-content-type=application%2Foctet-stream'
-          curl -fL --retry 3 --retry-delay 1 -o delivery/gift-room-portfolio-anti-generic.mp4 'https://release-assets.githubusercontent.com/github-production-release-asset/1115718280/a9585f8b-5b33-46a4-b2a0-2e05764f2e11?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-22T17%3A09%3A01Z&rscd=attachment%3B+filename%3Dgift-room-portfolio-anti-generic.mp4&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-22T16%3A08%3A30Z&ske=2026-08-22T17%3A09%3A01Z&sks=b&skv=2018-11-09&sig=1W6yAQRUCLouzc%2Baw8GDe%2BxT%2Fmdnc84R8fUVza865oc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NzQxNjY3MiwibmJmIjoxNzg3NDE2MzcyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-cZJ4z0XJoRWD_yYSyACW8kNS73eaYtzDhMTqkODXd0&response-content-disposition=attachment%3B%20filename%3Dgift-room-portfolio-anti-generic.mp4&response-content-type=application%2Foctet-stream'
-          curl -fL --retry 3 --retry-delay 1 -o delivery/gift-room-portfolio-curiosity-reveal.mp4 'https://release-assets.githubusercontent.com/github-production-release-asset/1115718280/b9e0a70b-403d-4b84-aa9c-84f6e91dc00d?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-22T17%3A10%3A23Z&rscd=attachment%3B+filename%3Dgift-room-portfolio-curiosity-reveal.mp4&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-22T16%3A10%3A17Z&ske=2026-08-22T17%3A10%3A23Z&sks=b&skv=2018-11-09&sig=019M60hD314dCHI4hE%2BzFSCFAj%2FiKZjxlSW1o9NyXEA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NzQxNjY3MywibmJmIjoxNzg3NDE2MzczLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.2zGWxkmsIBAICwQk_JVehmebpBbNzzeAAVNB6MuW6OQ&response-content-disposition=attachment%3B%20filename%3Dgift-room-portfolio-curiosity-reveal.mp4&response-content-type=application%2Foctet-stream'
-          curl -fL --retry 3 --retry-delay 1 -o delivery/gift-room-portfolio-distance-place.mp4 'https://release-assets.githubusercontent.com/github-production-release-asset/1115718280/533a6764-ac77-418e-86fd-9881ec1852c3?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-22T17%3A31%3A59Z&rscd=attachment%3B+filename%3Dgift-room-portfolio-distance-place.mp4&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-22T16%3A31%3A54Z&ske=2026-08-22T17%3A31%3A59Z&sks=b&skv=2018-11-09&sig=UB%2BbgBLEZrF59GmnFc361aeR81KGONw%2FBns0FFA7EB8%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NzQxNjY3MywibmJmIjoxNzg3NDE2MzczLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.2zGWxkmsIBAICwQk_JVehmebpBbNzzeAAVNB6MuW6OQ&response-content-disposition=attachment%3B%20filename%3Dgift-room-portfolio-distance-place.mp4&response-content-type=application%2Foctet-stream'
-          curl -fL --retry 3 --retry-delay 1 -o delivery/gift-room-portfolio-i-remember.mp4 'https://release-assets.githubusercontent.com/github-production-release-asset/1115718280/7be92c2e-da0f-4bb0-9ccd-40dac1eb452c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-22T17%3A33%3A05Z&rscd=attachment%3B+filename%3Dgift-room-portfolio-i-remember.mp4&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-22T16%3A32%3A53Z&ske=2026-08-22T17%3A33%3A05Z&sks=b&skv=2018-11-09&sig=4lruZ3I6C8%2BxqR%2FSYs8264DhURq1738UI7xB7yaMxN8%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NzQxNjY3MywibmJmIjoxNzg3NDE2MzczLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.2zGWxkmsIBAICwQk_JVehmebpBbNzzeAAVNB6MuW6OQ&response-content-disposition=attachment%3B%20filename%3Dgift-room-portfolio-i-remember.mp4&response-content-type=application%2Foctet-stream'
-          curl -fL --retry 3 --retry-delay 1 -o delivery/gift-room-portfolio-open-in-a-year.mp4 'https://release-assets.githubusercontent.com/github-production-release-asset/1115718280/5ce2b085-1404-4777-8435-5edd62bd48f4?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-22T17%3A32%3A21Z&rscd=attachment%3B+filename%3Dgift-room-portfolio-open-in-a-year.mp4&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-22T16%3A31%3A44Z&ske=2026-08-22T17%3A32%3A21Z&sks=b&skv=2018-11-09&sig=AjxNZzcfRExOd8vA6NulHblfhTTcPTc79WKcNS2tTRU%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NzQxNjY3NCwibmJmIjoxNzg3NDE2Mzc0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.JdblpNfQN1kiFkMUWagkPaLSa39npNhS-12Btp-i9qA&response-content-disposition=attachment%3B%20filename%3Dgift-room-portfolio-open-in-a-year.mp4&response-content-type=application%2Foctet-stream'
-          curl -fL --retry 3 --retry-delay 1 -o delivery/gift-room-portfolio-where-it-started.mp4 'https://release-assets.githubusercontent.com/github-production-release-asset/1115718280/ca4847c3-996b-4b62-9e73-0cbc3641c158?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-08-22T17%3A22%3A11Z&rscd=attachment%3B+filename%3Dgift-room-portfolio-where-it-started.mp4&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-08-22T16%3A21%3A54Z&ske=2026-08-22T17%3A22%3A11Z&sks=b&skv=2018-11-09&sig=IOFSrN74lDz3XMsHaxKKQLunaFxCGKz3VLQvNCNr1y8%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc4NzQxNjY3NCwibmJmIjoxNzg3NDE2Mzc0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.JdblpNfQN1kiFkMUWagkPaLSa39npNhS-12Btp-i9qA&response-content-disposition=attachment%3B%20filename%3Dgift-room-portfolio-where-it-started.mp4&response-content-type=application%2Foctet-stream'
+      - name: Checkout exact transport request
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 1
+          persist-credentials: false
 
-      - name: Verify exact SHA-256 set
+      - name: Resolve temporary request
+        id: request
         shell: bash
         run: |
           set -Eeuo pipefail
-          cat > expected.sha256 <<'EOF'
-          7348609244e73919d587d1323e107785fd72de8cb6e7ff9d57a9b84987930ce1  delivery/gift-room-portfolio-all-of-us.mp4
-          ce9c5b37eb2fe07065a453520cfa07076629dffd0385032d8af9cbc7f8a84a99  delivery/gift-room-portfolio-anniversary-panic.mp4
-          41a0b4fb090dba8360a13845db319ace1ac95c4698c7b4deee9f5965c5c67d3a  delivery/gift-room-portfolio-anti-generic.mp4
-          60a19d317acf4eaabf87bf8cef60ce6aacff73b1b2530602004d67decc633666  delivery/gift-room-portfolio-curiosity-reveal.mp4
-          39df43964bf6901a1d6c0268dda55b165ec3e7bd8e7e532f2dfe43ac65fe2670  delivery/gift-room-portfolio-distance-place.mp4
-          372dc0aa5f17467e510e3be5c4248adddacfdf56d8ce3e1f5923bb029f60ee9b  delivery/gift-room-portfolio-i-remember.mp4
-          a46b5097388a49e747a72ecb1fa0545d4dadd9448e47b43afc89adba275aa57c  delivery/gift-room-portfolio-open-in-a-year.mp4
-          67434880b2ed0ec23813a820fad8bb3947a7297db57b42f88c9e39e6750f0723  delivery/gift-room-portfolio-where-it-started.mp4
-          EOF
-          sed -i 's/^          //' expected.sha256
-          sha256sum -c expected.sha256
+          request='.github/gift-room-chat-transfer-request.txt'
+          test -s "$request"
+          enabled="$(awk -F= '$1 == "enabled" {print substr($0, index($0, "=") + 1); exit}' "$request")"
+          source_sha="$(awk -F= '$1 == "source_sha" {print substr($0, index($0, "=") + 1); exit}' "$request")"
+          release_tag="$(awk -F= '$1 == "release_tag" {print substr($0, index($0, "=") + 1); exit}' "$request")"
+          [[ "$enabled" == 'true' || "$enabled" == 'false' ]]
+          [[ "$source_sha" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$release_tag" =~ ^gift-room-portfolio-[0-9]+-[0-9a-f]{12}$ ]]
+          printf 'enabled=%s\nsource_sha=%s\nrelease_tag=%s\n' "$enabled" "$source_sha" "$release_tag" >> "$GITHUB_OUTPUT"
+
+      - name: Download and verify exact public-safe MP4 candidates
+        if: steps.request.outputs.enabled == 'true'
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          request='.github/gift-room-chat-transfer-request.txt'
+          mkdir -p delivery
+          mapfile -t rows < <(awk 'BEGIN{assets=0} /^assets_begin$/ {assets=1; next} /^assets_end$/ {assets=0; next} assets {print}' "$request")
+          [[ "${#rows[@]}" -eq 8 ]]
+
+          expected_names=(
+            gift-room-portfolio-all-of-us.mp4
+            gift-room-portfolio-anniversary-panic.mp4
+            gift-room-portfolio-anti-generic.mp4
+            gift-room-portfolio-curiosity-reveal.mp4
+            gift-room-portfolio-distance-place.mp4
+            gift-room-portfolio-i-remember.mp4
+            gift-room-portfolio-open-in-a-year.mp4
+            gift-room-portfolio-where-it-started.mp4
+          )
+          declare -A seen=()
+          for row in "${rows[@]}"; do
+            IFS=$'\t' read -r name expected_sha url extra <<<"$row"
+            [[ -n "$name" && -n "$expected_sha" && -n "$url" && -z "${extra:-}" ]]
+            [[ "$name" =~ ^gift-room-portfolio-[a-z0-9-]+\.mp4$ ]]
+            [[ "$expected_sha" =~ ^[0-9a-f]{64}$ ]]
+            [[ "$url" == https://release-assets.githubusercontent.com/* ]]
+            [[ -z "${seen[$name]:-}" ]]
+            seen[$name]=1
+            curl -fL --retry 3 --retry-delay 1 -o "delivery/$name" "$url"
+            actual_sha="$(sha256sum "delivery/$name" | awk '{print $1}')"
+            [[ "$actual_sha" == "$expected_sha" ]]
+          done
+          [[ "${#seen[@]}" -eq 8 ]]
+          for name in "${expected_names[@]}"; do
+            [[ "${seen[$name]:-}" == 1 ]]
+            test -s "delivery/$name"
+          done
+
+          for file in delivery/*.mp4; do
+            width="$(ffprobe -v error -select_streams v:0 -show_entries stream=width -of default=nw=1:nk=1 "$file")"
+            height="$(ffprobe -v error -select_streams v:0 -show_entries stream=height -of default=nw=1:nk=1 "$file")"
+            rate="$(ffprobe -v error -select_streams v:0 -show_entries stream=avg_frame_rate -of default=nw=1:nk=1 "$file")"
+            frames="$(ffprobe -v error -select_streams v:0 -count_frames -show_entries stream=nb_read_frames -of default=nw=1:nk=1 "$file")"
+            duration="$(ffprobe -v error -show_entries format=duration -of default=nw=1:nk=1 "$file")"
+            [[ "$width" == 1080 && "$height" == 1920 ]]
+            [[ "$rate" == '30/1' || "$rate" == '30' ]]
+            [[ "$frames" == 450 ]]
+            awk -v d="$duration" 'BEGIN { exit !(d >= 14.99 && d <= 15.01) }'
+          done
+          echo "EXACT_EIGHT_PUBLIC_SAFE_MP4_TRANSPORT_PASS source=${{ steps.request.outputs.source_sha }} release=${{ steps.request.outputs.release_tag }}"
 
       - name: Upload exact eight-video bundle
+        if: steps.request.outputs.enabled == 'true'
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
-          name: gift-room-exact-eight-mp4-b6b567105e29
+          name: gift-room-exact-eight-mp4-${{ steps.request.outputs.source_sha }}
           path: delivery/*.mp4
           if-no-files-found: error
           retention-days: 1
-          compression-level: 0
