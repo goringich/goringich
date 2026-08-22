@@ -1,0 +1,49 @@
+name: Temporary Gift Room Chat Artifact
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, reopened, synchronize]
+    paths:
+      - '.github/workflows/gift-room-chat-artifact.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TAG: gift-room-chat-delivery-b6b567105e29
+    steps:
+      - name: Download exact release files
+        run: |
+          set -Eeuo pipefail
+          mkdir -p delivery
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --pattern '*.mp4' --dir delivery
+          [[ "$(find delivery -maxdepth 1 -type f -name '*.mp4' | wc -l)" -eq 8 ]]
+      - name: Verify exact SHA-256 set
+        run: |
+          set -Eeuo pipefail
+          cat > expected.sha256 <<'EOF'
+          7348609244e73919d587d1323e107785fd72de8cb6e7ff9d57a9b84987930ce1  delivery/gift-room-portfolio-all-of-us.mp4
+          ce9c5b37eb2fe07065a453520cfa07076629dffd0385032d8af9cbc7f8a84a99  delivery/gift-room-portfolio-anniversary-panic.mp4
+          41a0b4fb090dba8360a13845db319ace1ac95c4698c7b4deee9f5965c5c67d3a  delivery/gift-room-portfolio-anti-generic.mp4
+          60a19d317acf4eaabf87bf8cef60ce6aacff73b1b2530602004d67decc633666  delivery/gift-room-portfolio-curiosity-reveal.mp4
+          39df43964bf6901a1d6c0268dda55b165ec3e7bd8e7e532f2dfe43ac65fe2670  delivery/gift-room-portfolio-distance-place.mp4
+          372dc0aa5f17467e510e3be5c4248adddacfdf56d8ce3e1f5923bb029f60ee9b  delivery/gift-room-portfolio-i-remember.mp4
+          a46b5097388a49e747a72ecb1fa0545d4dadd9448e47b43afc89adba275aa57c  delivery/gift-room-portfolio-open-in-a-year.mp4
+          67434880b2ed0ec23813a820fad8bb3947a7297db57b42f88c9e39e6750f0723  delivery/gift-room-portfolio-where-it-started.mp4
+          EOF
+          sed -i 's/^          //' expected.sha256
+          sha256sum -c expected.sha256
+      - name: Upload exact eight MP4 files
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: gift-room-eight-exact-mp4
+          path: delivery/*.mp4
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 0
