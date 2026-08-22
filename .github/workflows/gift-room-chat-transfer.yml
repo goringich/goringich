@@ -22,6 +22,16 @@ jobs:
           fetch-depth: 1
           persist-credentials: false
 
+      - name: Install exact media verifier
+        if: steps.request.outputs.enabled == 'true'
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ffmpeg
+          command -v ffprobe
+          command -v ffmpeg
+
       - name: Resolve temporary request
         id: request
         shell: bash
@@ -36,6 +46,18 @@ jobs:
           [[ "$source_sha" =~ ^[0-9a-f]{40}$ ]]
           [[ "$release_tag" =~ ^gift-room-portfolio-[0-9]+-[0-9a-f]{12}$ ]]
           printf 'enabled=%s\nsource_sha=%s\nrelease_tag=%s\n' "$enabled" "$source_sha" "$release_tag" >> "$GITHUB_OUTPUT"
+
+      - name: Ensure exact media verifier
+        if: steps.request.outputs.enabled == 'true'
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          if ! command -v ffprobe >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ffmpeg
+          fi
+          command -v ffprobe
+          command -v ffmpeg
 
       - name: Download and verify exact public-safe MP4 candidates
         if: steps.request.outputs.enabled == 'true'
