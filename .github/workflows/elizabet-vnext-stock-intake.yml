@@ -1,0 +1,58 @@
+name: Temporary Elizabeth VNext Stock Intake
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, reopened, synchronize]
+    paths:
+      - '.github/workflows/elizabet-vnext-stock-intake.yml'
+      - '.github/elizabet-vnext-stock-request.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact request
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Download pinned Pexels exploration assets
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          test "$(cat .github/elizabet-vnext-stock-request.txt)" = 'enabled=true'
+          mkdir -p stock
+
+          fetch() {
+            local id="$1" name="$2" page="$3" author="$4"
+            local url="https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=1800"
+            curl -fL --retry 4 --retry-delay 1 -A 'Mozilla/5.0' -o "stock/${name}.jpg" "$url"
+            test -s "stock/${name}.jpg"
+            bytes="$(stat -c %s "stock/${name}.jpg")"
+            test "$bytes" -gt 50000
+            sha="$(sha256sum "stock/${name}.jpg" | awk '{print $1}')"
+            printf '%s\t%s\t%s\t%s\t%s\t%s\n' "$name" "$id" "$sha" "$bytes" "$author" "$page" >> stock/manifest.tsv
+          }
+
+          fetch 5493219 gift-exchange 'https://www.pexels.com/photo/couple-looking-at-each-other-5493219/' 'Antoni Shkraba Studio'
+          fetch 9787927 phone-hands-bed 'https://www.pexels.com/photo/a-person-holding-a-smartphone-9787927/' 'Marcus Aurelius'
+          fetch 6643009 holding-hands-close 'https://www.pexels.com/photo/couple-holding-hands-6643009/' 'Alena Darmel'
+          fetch 35490265 phone-warm-home 'https://www.pexels.com/photo/smartphone-mockup-in-modern-home-interior-35490265/' 'Jakub Zerdzicki'
+
+          test "$(wc -l < stock/manifest.tsv)" -eq 4
+          cat stock/manifest.tsv
+
+      - name: Upload exact exploration stock pack
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: elizabet-vnext-pexels-stock
+          path: stock/
+          if-no-files-found: error
+          retention-days: 1
