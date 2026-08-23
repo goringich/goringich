@@ -58,8 +58,8 @@ jobs:
             fps="$(jq -r '.streams[0].avg_frame_rate' "live-video/${key}.ffprobe.json")"
             codec="$(jq -r '.streams[0].codec_name' "live-video/${key}.ffprobe.json")"
             test "$bytes" -gt 100000
-            printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' \
-              "$key" "$id" "$sha" "$bytes" "$width" "$height" "$duration" "$fps" "$codec" "$author" "$role" >> live-video/manifest.tsv
+            printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' \
+              "$key" "$id" "$sha" "$bytes" "$width" "$height" "$duration" "$fps" "$codec" "$author" "$role" "$page" >> live-video/manifest.tsv
             ffmpeg -hide_banner -loglevel error -y -ss 1.0 -i "$target" -frames:v 1 \
               -vf 'scale=360:640:force_original_aspect_ratio=increase,crop=360:640' "previews/${key}.jpg"
           }
@@ -68,12 +68,18 @@ jobs:
             'https://www.pexels.com/video/person-giving-someone-a-present-on-the-spotlight-6624838/'
           fetch_video 5309631 handwritten-letter-live 'Biplab Sau' personal_letter \
             'https://www.pexels.com/video/person-writing-a-letter-on-a-paper-5309631/'
-          fetch_video 7263149 city-couple-walk-live 'Sarah Chai' shared_place_connection \
+          fetch_video 9429709 couple-polaroid-live 'Anna Pou' printed_memory_and_connection \
+            'https://www.pexels.com/video/a-couple-holding-hands-and-polaroid-pictures-9429709/'
+          fetch_video 8705260 memory-book-live 'Katya Wolf' memory_book \
+            'https://www.pexels.com/video/person-sticking-photo-on-a-notebook-8705260/'
+          fetch_video 5908345 city-couple-walk-mixed-live 'Katerina Holmes' shared_place_connection \
+            'https://www.pexels.com/video/couple-holding-hands-while-walking-5908345/'
+          fetch_video 7263149 city-couple-walk-live 'Sarah Chai' shared_place_connection_alternate \
             'https://www.pexels.com/video/couple-holding-each-other-s-hands-while-walking-7263149/'
           fetch_video 9058359 couple-gift-reaction-live 'SHVETS production' human_payoff \
             'https://www.pexels.com/video/a-woman-giving-present-to-her-lover-9058359/'
 
-          test "$(wc -l < live-video/manifest.tsv)" -eq 4
+          test "$(wc -l < live-video/manifest.tsv)" -eq 7
           cat live-video/manifest.tsv
 
           python3 - <<'PY'
@@ -83,7 +89,7 @@ jobs:
           rows = []
           with (root / 'manifest.tsv').open(newline='', encoding='utf-8') as f:
               for row in csv.reader(f, delimiter='\t'):
-                  key, pexels_id, sha, size, width, height, duration, fps, codec, author, role = row
+                  key, pexels_id, sha, size, width, height, duration, fps, codec, author, role, page = row
                   rows.append({
                       'id': key,
                       'pexels_id': int(pexels_id),
@@ -96,10 +102,11 @@ jobs:
                       'codec': codec,
                       'author': author,
                       'semantic_role': role,
+                      'source_page': page,
                       'stock_truth': 'illustrative_stock_not_customer_testimonial_or_endorsement',
                   })
           payload = {
-              'schema_version': '2026-08-23.elizabet-vnext-live-video-intake.v1',
+              'schema_version': '2026-08-23.elizabet-vnext-live-video-intake.v2',
               'source': 'Pexels',
               'license': 'https://www.pexels.com/license/',
               'publication_authority': False,
@@ -112,9 +119,12 @@ jobs:
           ffmpeg -hide_banner -loglevel error -y \
             -i previews/wrapped-gift-live.jpg \
             -i previews/handwritten-letter-live.jpg \
+            -i previews/couple-polaroid-live.jpg \
+            -i previews/memory-book-live.jpg \
+            -i previews/city-couple-walk-mixed-live.jpg \
             -i previews/city-couple-walk-live.jpg \
             -i previews/couple-gift-reaction-live.jpg \
-            -filter_complex '[0:v][1:v]hstack=inputs=2[top];[2:v][3:v]hstack=inputs=2[bottom];[top][bottom]vstack=inputs=2[out]' \
+            -filter_complex '[0:v][1:v][2:v][3:v][4:v][5:v][6:v]xstack=inputs=7:layout=0_0|360_0|720_0|1080_0|0_640|360_640|720_640:fill=black[out]' \
             -map '[out]' -frames:v 1 -q:v 2 live-video/contact-sheet.jpg
           test -s live-video/contact-sheet.jpg
 
