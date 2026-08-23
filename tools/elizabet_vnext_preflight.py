@@ -15,17 +15,17 @@ FRAMES = OUT / 'frames'
 W, H, FPS, DURATION = 540, 960, 30, 15
 
 ASSETS = {
-    'gift': (5493219, '055e51ab4970696b3dfa1a41277983eaf24c3e8cb0f9b8aaba5cf4e8f8548136'),
-    'phone': (9787927, '8d856002bc1aa9f2bb29144734a32e1da379777395db3ff70a5bcbbe4561cee3'),
-    'hands': (6643009, 'f68efec89c7663736d870341782cea7b66b5a3119aeacf15e7f69e51cbadb68f'),
-    'home': (35490265, 'dfc778c07cb9ec6381c8684fd5693564eb41e4fbcbceba131b22cd74b516ef68'),
+    'couple': (5493219, '055e51ab4970696b3dfa1a41277983eaf24c3e8cb0f9b8aaba5cf4e8f8548136'),
+    'gift': (7910649, 'b31cadb0f296e84be182a27e59c0ee991dba269e40c5894ccf81d1397f341964'),
+    'hands': (7715723, '2c4e019bbfee0237b4cf9eaa7dd071d9b229b591c8851aba13f65034a0afe9df'),
     'polaroid': (6188753, 'e108091e08008f28e01008deabe0dc7869231982d0f964d7df86a98745e2c6b7'),
     'letter': (10660565, '189307064b4ff3f3afd47ded59ba23ed0d036da125da897bbe2a153f2a7c96c3'),
     'city': (7922285, 'ef3ad90421fdc21f0f0fe5723655e0b9f3d5b2066b5de912f87f87ef7544f506'),
 }
 
-# V2 deliberately removes the long blank-phone ending. Human memory material owns
-# most of the timeline; product proof is a short layer inside the story.
+# V3: the opening now reads as an actual gift immediately; the connection beat is
+# unmistakably a couple's hands; the emotional payoff returns to the couple.
+# Product proof remains only two seconds and never owns the ending.
 BEATS = [
     (0.0, 1.25, 'gift', 'Не ещё одну вещь.', 'hook'),
     (1.25, 2.5, 'hands', 'То, что уже ваше.', 'copy'),
@@ -34,8 +34,8 @@ BEATS = [
     (5.9, 7.6, 'city', 'Место, с которого всё началось.', 'copy'),
     (7.6, 9.4, 'polaroid', 'Собери это в один подарок.', 'memories'),
     (9.4, 11.4, 'polaroid', '', 'proof'),
-    (11.4, 13.1, 'gift', 'Подарок, к которому возвращаются.', 'copy'),
-    (13.1, 15.0, 'gift', 'Собрать Gift Room →', 'cta'),
+    (11.4, 13.1, 'couple', 'Подарок, к которому возвращаются.', 'copy'),
+    (13.1, 15.0, 'couple', 'Собрать Gift Room →', 'cta'),
 ]
 
 FONT_REG = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
@@ -49,13 +49,12 @@ FONT_BRAND = ImageFont.truetype(FONT_BOLD, 13)
 FONT_PROOF = ImageFont.truetype(FONT_BOLD, 32)
 
 FOCUS = {
-    'gift': (.50, .47),
-    'hands': (.49, .55),
+    'couple': (.50, .47),
+    'gift': (.50, .52),
+    'hands': (.50, .54),
     'polaroid': (.50, .57),
     'letter': (.54, .48),
     'city': (.52, .52),
-    'phone': (.50, .46),
-    'home': (.50, .52),
 }
 
 
@@ -72,7 +71,6 @@ def clamp01(value: float) -> float:
 
 
 def cover(image: Image.Image, t: float, seed: float, key: str) -> Image.Image:
-    # Restrained photographic drift. No continuous decorative oscillation.
     scale = 1.045 + 0.026 * t
     ratio = max(W / image.width, H / image.height) * scale
     rw, rh = int(image.width * ratio), int(image.height * ratio)
@@ -226,7 +224,7 @@ def main():
         '-vf', 'fps=8/15,scale=270:480:flags=lanczos,tile=4x2:padding=8:margin=8:color=0x151116',
         '-frames:v', '1', '-q:v', '2', str(sheet)
     ], check=True)
-    print(f'VERIFIED_PREVIEW_V2 sha256={sha256(mp4)} file={mp4}')
+    print(f'VERIFIED_PREVIEW_V3 sha256={sha256(mp4)} file={mp4}')
 
 
 if __name__ == '__main__':
