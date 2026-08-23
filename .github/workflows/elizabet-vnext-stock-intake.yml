@@ -48,8 +48,10 @@ jobs:
           fetch 6188753 polaroid-memory 'https://www.pexels.com/photo/person-holding-polaroid-picture-6188753/' 'cottonbro studio'
           fetch 10660565 handwritten-letter 'https://www.pexels.com/photo/close-up-of-womans-hands-holding-letter-10660565/' 'Ron Lach'
           fetch 7922285 city-walk 'https://www.pexels.com/photo/a-couple-holding-hands-walking-on-a-street-7922285/' 'itsmeseher'
+          fetch 7910649 wrapped-gift-hands 'https://www.pexels.com/photo/people-holding-a-gift-7910649/' 'Ivan S'
+          fetch 7715723 couple-hands-clear 'https://www.pexels.com/photo/a-couple-holding-each-others-hands-7715723/' 'Mikhail Nilov'
 
-          test "$(wc -l < stock/manifest.tsv)" -eq 7
+          test "$(wc -l < stock/manifest.tsv)" -eq 9
           cat stock/manifest.tsv
 
       - name: Upload exact exploration stock pack
