@@ -1,0 +1,76 @@
+name: Temporary Elizabeth VNext Live Animatics
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, reopened, synchronize]
+    paths:
+      - '.github/elizabet-vnext-live-animatics-request.txt'
+      - '.github/workflows/elizabet-vnext-live-animatics.yml'
+      - 'tools/elizabet_vnext_live_animatics.py'
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Checkout exact animatic source
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Install deterministic edit dependencies
+        run: |
+          set -Eeuo pipefail
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ffmpeg python3-pil fonts-dejavu-core
+          ffmpeg -version | head -n 1
+
+      - name: Fetch and bind exact live-action sources
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          test "$(cat .github/elizabet-vnext-live-animatics-request.txt)" = 'enabled=true'
+          mkdir -p live-assets
+          fetch() {
+            local id="$1" name="$2" expected="$3"
+            curl -fL --retry 4 --retry-delay 1 -A 'Mozilla/5.0' -o "live-assets/${name}.mp4" "https://www.pexels.com/download/video/${id}/"
+            test -s "live-assets/${name}.mp4"
+            actual="$(sha256sum "live-assets/${name}.mp4" | awk '{print $1}')"
+            [[ "$actual" == "$expected" ]] || { echo "SHA mismatch ${name}: $actual" >&2; exit 2; }
+          }
+          fetch 6624838 wrapped-gift-live 238810b731cfe0ce3fd149ef55c12d1c3d2a53e5b25182af71124edaac70f35e
+          fetch 9429709 couple-polaroid-live 8363999e93aa3bdddb21fe71a402bedbae7860822a98e82e5c99ec58e4efa700
+          fetch 8705260 memory-book-live 09e99a1c21f48d4f16347d2e949e7e5ff150c4e8fbd8ca39d6a72db23371c603
+          fetch 5309631 handwritten-letter-live ea2b64c7ec20f84258080a2c1ba56996e99495d31933303a985363512fd6c489
+          fetch 5908345 city-couple-walk-mixed-live a515bedc4eea1fb5822b2c1f75e73a67d3dd315177f70eb5aecc9ab6bd3a5be0
+          fetch 9058359 couple-gift-reaction-live a74e09f120392bae9864273aa0cdb6e76a5ba0af58d902309e8588edc1cef056
+
+      - name: Render three materially distinct 360x640 semantic animatics
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          python3 tools/elizabet_vnext_live_animatics.py
+          test -s live-animatics/manifest.json
+          for id in gift-memory-arc problem-solution memory-match-cut; do
+            test -s "live-animatics/${id}.mp4"
+            test -s "live-animatics/${id}-contact-sheet.jpg"
+            ffprobe -v error -select_streams v:0 -show_entries stream=width,height,avg_frame_rate -show_entries format=duration -of json "live-animatics/${id}.mp4"
+          done
+
+      - name: Upload semantic animatic comparison bundle
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: elizabet-vnext-live-animatics
+          path: |
+            live-animatics/*.mp4
+            live-animatics/*-contact-sheet.jpg
+            live-animatics/manifest.json
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 6
