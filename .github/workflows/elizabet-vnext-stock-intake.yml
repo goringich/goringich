@@ -45,8 +45,11 @@ jobs:
           fetch 9787927 phone-hands-bed 'https://www.pexels.com/photo/a-person-holding-a-smartphone-9787927/' 'Marcus Aurelius'
           fetch 6643009 holding-hands-close 'https://www.pexels.com/photo/couple-holding-hands-6643009/' 'Alena Darmel'
           fetch 35490265 phone-warm-home 'https://www.pexels.com/photo/smartphone-mockup-in-modern-home-interior-35490265/' 'Jakub Zerdzicki'
+          fetch 6188753 polaroid-memory 'https://www.pexels.com/photo/person-holding-polaroid-picture-6188753/' 'cottonbro studio'
+          fetch 10660565 handwritten-letter 'https://www.pexels.com/photo/close-up-of-womans-hands-holding-letter-10660565/' 'Ron Lach'
+          fetch 7922285 city-walk 'https://www.pexels.com/photo/a-couple-holding-hands-walking-on-a-street-7922285/' 'itsmeseher'
 
-          test "$(wc -l < stock/manifest.tsv)" -eq 4
+          test "$(wc -l < stock/manifest.tsv)" -eq 7
           cat stock/manifest.tsv
 
       - name: Upload exact exploration stock pack
