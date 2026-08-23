@@ -1,0 +1,64 @@
+name: Temporary Elizabeth VNext Portable Visual Preflight
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, reopened, synchronize]
+    paths:
+      - '.github/elizabet-vnext-preflight-request.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout exact preflight source
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Install visual preflight dependencies
+        run: |
+          set -Eeuo pipefail
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ffmpeg python3-pil fonts-dejavu-core
+
+      - name: Fetch and verify exact photographic assets
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          test "$(cat .github/elizabet-vnext-preflight-request.txt)" = 'enabled=true'
+          mkdir -p stock-vnext
+          fetch() {
+            local key="$1" id="$2" expected="$3"
+            curl -fL --retry 4 --retry-delay 1 -A 'Mozilla/5.0' -o "stock-vnext/${key}.jpg" "https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=1800"
+            actual="$(sha256sum "stock-vnext/${key}.jpg" | awk '{print $1}')"
+            [[ "$actual" == "$expected" ]]
+          }
+          fetch gift 5493219 055e51ab4970696b3dfa1a41277983eaf24c3e8cb0f9b8aaba5cf4e8f8548136
+          fetch phone 9787927 8d856002bc1aa9f2bb29144734a32e1da379777395db3ff70a5bcbbe4561cee3
+          fetch hands 6643009 f68efec89c7663736d870341782cea7b66b5a3119aeacf15e7f69e51cbadb68f
+          fetch home 35490265 dfc778c07cb9ec6381c8684fd5693564eb41e4fbcbceba131b22cd74b516ef68
+
+      - name: Render 15 second photographic preflight
+        run: |
+          set -Eeuo pipefail
+          python3 tools/elizabet_vnext_preflight.py
+          test -s vnext-preflight/gift-room-vnext-portable-preflight.mp4
+          test -s vnext-preflight/gift-room-vnext-portable-contact-sheet.jpg
+          ffprobe -v error -select_streams v:0 -show_entries stream=width,height,avg_frame_rate,nb_frames -show_entries format=duration -of json vnext-preflight/gift-room-vnext-portable-preflight.mp4
+
+      - name: Upload portable visual review bundle
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: elizabet-vnext-portable-visual-preflight
+          path: |
+            vnext-preflight/gift-room-vnext-portable-preflight.mp4
+            vnext-preflight/gift-room-vnext-portable-contact-sheet.jpg
+          if-no-files-found: error
+          retention-days: 1
