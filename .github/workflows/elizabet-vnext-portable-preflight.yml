@@ -44,6 +44,9 @@ jobs:
           fetch phone 9787927 8d856002bc1aa9f2bb29144734a32e1da379777395db3ff70a5bcbbe4561cee3
           fetch hands 6643009 f68efec89c7663736d870341782cea7b66b5a3119aeacf15e7f69e51cbadb68f
           fetch home 35490265 dfc778c07cb9ec6381c8684fd5693564eb41e4fbcbceba131b22cd74b516ef68
+          fetch polaroid 6188753 e108091e08008f28e01008deabe0dc7869231982d0f964d7df86a98745e2c6b7
+          fetch letter 10660565 189307064b4ff3f3afd47ded59ba23ed0d036da125da897bbe2a153f2a7c96c3
+          fetch city 7922285 ef3ad90421fdc21f0f0fe5723655e0b9f3d5b2066b5de912f87f87ef7544f506
 
       - name: Render 15 second photographic preflight
         run: |
