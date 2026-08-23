@@ -1,0 +1,130 @@
+name: Temporary Elizabeth VNext Live Video Intake
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, reopened, synchronize]
+    paths:
+      - '.github/workflows/elizabet-vnext-live-video-intake.yml'
+      - '.github/elizabet-vnext-live-video-request.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  intake:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout exact request
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Install media inspection tools
+        run: |
+          set -Eeuo pipefail
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ffmpeg jq
+
+      - name: Download and inspect exact Pexels video candidates
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          test "$(cat .github/elizabet-vnext-live-video-request.txt)" = 'enabled=true'
+          mkdir -p live-video previews
+          : > live-video/manifest.tsv
+
+          fetch_video() {
+            local id="$1" key="$2" author="$3" role="$4" page="$5"
+            local target="live-video/${key}.mp4"
+            local url="https://www.pexels.com/download/video/${id}/"
+            curl -fL --retry 4 --retry-delay 1 -A 'Mozilla/5.0' -o "$target" "$url"
+            test -s "$target"
+            file "$target"
+            ffprobe -v error -select_streams v:0 \
+              -show_entries stream=codec_name,width,height,avg_frame_rate,duration \
+              -show_entries format=duration,size \
+              -of json "$target" > "live-video/${key}.ffprobe.json"
+            jq -e '.streams | length == 1' "live-video/${key}.ffprobe.json" >/dev/null
+            local bytes sha width height duration fps codec
+            bytes="$(stat -c %s "$target")"
+            sha="$(sha256sum "$target" | awk '{print $1}')"
+            width="$(jq -r '.streams[0].width' "live-video/${key}.ffprobe.json")"
+            height="$(jq -r '.streams[0].height' "live-video/${key}.ffprobe.json")"
+            duration="$(jq -r '.format.duration // .streams[0].duration' "live-video/${key}.ffprobe.json")"
+            fps="$(jq -r '.streams[0].avg_frame_rate' "live-video/${key}.ffprobe.json")"
+            codec="$(jq -r '.streams[0].codec_name' "live-video/${key}.ffprobe.json")"
+            test "$bytes" -gt 100000
+            printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' \
+              "$key" "$id" "$sha" "$bytes" "$width" "$height" "$duration" "$fps" "$codec" "$author" "$role" >> live-video/manifest.tsv
+            ffmpeg -hide_banner -loglevel error -y -ss 1.0 -i "$target" -frames:v 1 \
+              -vf 'scale=360:640:force_original_aspect_ratio=increase,crop=360:640' "previews/${key}.jpg"
+          }
+
+          fetch_video 6624838 wrapped-gift-live 'Anna Shvets' explicit_gift \
+            'https://www.pexels.com/video/person-giving-someone-a-present-on-the-spotlight-6624838/'
+          fetch_video 5309631 handwritten-letter-live 'Biplab Sau' personal_letter \
+            'https://www.pexels.com/video/person-writing-a-letter-on-a-paper-5309631/'
+          fetch_video 7263149 city-couple-walk-live 'Sarah Chai' shared_place_connection \
+            'https://www.pexels.com/video/couple-holding-each-other-s-hands-while-walking-7263149/'
+          fetch_video 9058359 couple-gift-reaction-live 'SHVETS production' human_payoff \
+            'https://www.pexels.com/video/a-woman-giving-present-to-her-lover-9058359/'
+
+          test "$(wc -l < live-video/manifest.tsv)" -eq 4
+          cat live-video/manifest.tsv
+
+          python3 - <<'PY'
+          import csv, json
+          from pathlib import Path
+          root = Path('live-video')
+          rows = []
+          with (root / 'manifest.tsv').open(newline='', encoding='utf-8') as f:
+              for row in csv.reader(f, delimiter='\t'):
+                  key, pexels_id, sha, size, width, height, duration, fps, codec, author, role = row
+                  rows.append({
+                      'id': key,
+                      'pexels_id': int(pexels_id),
+                      'sha256': sha,
+                      'bytes': int(size),
+                      'width': int(width),
+                      'height': int(height),
+                      'duration_seconds': float(duration),
+                      'fps_ratio': fps,
+                      'codec': codec,
+                      'author': author,
+                      'semantic_role': role,
+                      'stock_truth': 'illustrative_stock_not_customer_testimonial_or_endorsement',
+                  })
+          payload = {
+              'schema_version': '2026-08-23.elizabet-vnext-live-video-intake.v1',
+              'source': 'Pexels',
+              'license': 'https://www.pexels.com/license/',
+              'publication_authority': False,
+              'paid_social_authority': False,
+              'exact_candidates': rows,
+          }
+          (root / 'intake.json').write_text(json.dumps(payload, indent=2) + '\n')
+          PY
+
+          ffmpeg -hide_banner -loglevel error -y \
+            -i previews/wrapped-gift-live.jpg \
+            -i previews/handwritten-letter-live.jpg \
+            -i previews/city-couple-walk-live.jpg \
+            -i previews/couple-gift-reaction-live.jpg \
+            -filter_complex '[0:v][1:v]hstack=inputs=2[top];[2:v][3:v]hstack=inputs=2[bottom];[top][bottom]vstack=inputs=2[out]' \
+            -map '[out]' -frames:v 1 -q:v 2 live-video/contact-sheet.jpg
+          test -s live-video/contact-sheet.jpg
+
+      - name: Upload exact live-video exploration pack
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: elizabet-vnext-live-video-intake
+          path: |
+            live-video/
+            previews/
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 6
