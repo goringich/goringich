@@ -1,0 +1,25 @@
+name: Temporary encrypted chat relay
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/tmp-chat-relay-20260827.yml
+
+permissions:
+  contents: write
+
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download encrypted report
+        run: |
+          curl -fL --retry 3 -o /tmp/real-report-20260817-23.xlsx.enc https://tmpfiles.org/dl/wtwDG3ENnbae/real-report-20260817-23.xlsx.enc
+          test "$(sha256sum /tmp/real-report-20260817-23.xlsx.enc | awk '{print $1}')" = "2f19a53e7a5a87f482a42137fe0424888e29e3dde263241b621d35e9fa55539f"
+      - name: Publish temporary encrypted asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete chat-relay-20260827 --repo goringich/goringich --yes >/dev/null 2>&1 || true
+          gh release create chat-relay-20260827 /tmp/real-report-20260817-23.xlsx.enc --repo goringich/goringich --title "Temporary encrypted chat relay" --notes "Encrypted transport only"
