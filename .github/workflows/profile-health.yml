@@ -2,8 +2,6 @@ name: Profile health
 
 on:
   push:
-    branches:
-      - main
     paths:
       - README.md
       - assets/**
