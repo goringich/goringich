@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="./assets/hero.svg" width="100%" alt="Igor Kim — Frontend and Fullstack Engineer focused on interactive systems, Linux, Yocto and local AI" />
+<img src="./assets/hero.svg" width="100%" alt="Igor Kim — Fullstack Engineer focused on automation, agentic systems, Linux, Yocto and commercial product engineering" />
 
 <br />
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=2500&pause=850&color=58A6FF&center=true&vCenter=true&width=980&lines=React+%2B+TypeScript+Developer;Fullstack+Developer;Interactive+UI+%26+Algorithm+Visualization;Real-time+Dashboards+%26+WebSocket+Systems;Linux+%2F+Yocto+%2F+Embedded+Engineering;Local+AI+Systems+%26+Developer+Tooling)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=2500&pause=850&color=58A6FF&center=true&vCenter=true&width=980&lines=Fullstack+Engineering+%26+Product+Systems;Automation+%26+Agentic+Workflows;LLM+%2F+Agent+Orchestration+%26+Developer+Tooling;Linux+%2F+Yocto+%2F+Embedded+Engineering;Real-time+Systems+%26+Interactive+Interfaces;Commercial+Product+Development)](https://git.io/typing-svg)
 
 <br />
 
@@ -19,60 +19,89 @@
 
 <img src="https://komarev.com/ghpvc/?username=goringich&style=for-the-badge&color=1F6FEB" alt="Profile views" />
 <img src="https://img.shields.io/github/followers/goringich?style=for-the-badge&logo=github&color=00E5FF&labelColor=0D1117" alt="GitHub followers" />
-<img src="https://img.shields.io/github/stars/goringich?style=for-the-badge&logo=github&color=00E5FF&labelColor=0D1117" alt="GitHub stars" />
 
 <br />
 <br />
 
-### Frontend Developer | Fullstack Developer | HSE Software Engineering Student
+### Fullstack Engineer · Automation & Agentic Systems · HSE Software Engineering Student
 
-I build **interactive web interfaces**, **algorithm visualizations**, **real-time dashboards**, **fullstack systems**, **Linux tooling**, and **local AI workflows** with React, TypeScript, Python, Go, PostgreSQL, Redis, WebSocket, PixiJS, and React Konva.
+I build **end-to-end product systems** across **web interfaces, backend services, data, Linux infrastructure, automation, observability, agent workflows and operations**.
 
-<sub><b>Interface · data · automation · infrastructure · observability</b></sub>
+I work with **LLM/agent orchestration, context and retrieval, local-model tooling and workflow automation** as engineering systems — not as an ML/model-training specialization.
+
+<sub><b>Product · backend · data · automation · agents · infrastructure · observability · operations</b></sub>
 
 <br />
 
-[About](#about-me) · [Featured Engineering](#featured-engineering) · [Experience](#experience) · [Tech Stack](#tech-stack) · [GitHub](#github-overview) · [Work With Me](#work-with-me-one-linux--local-ai-workflow) · [Contact](#contact)
+[Professional Profile](#professional-profile--cv) · [Featured Engineering](#featured-engineering) · [Experience](#experience) · [Tech Stack](#tech-stack) · [GitHub](#github-overview) · [Work With Me](#work-with-me-one-linux--local-ai-workflow) · [Contact](#contact)
 
 </div>
 
 ---
 
-## About Me
+## Professional profile / CV
 
-> Building across the boundary between product interfaces and engineering systems — from high-performance React visualization to Yocto Linux and local AI workflows.
+| | |
+| --- | --- |
+| **Current role** | Yocto / Linux Development at **YADRO / Radio Gigabit** |
+| **Engineering direction** | Fullstack systems · automation · agentic/LLM workflows · Linux / Yocto · real-time systems · internal tooling |
+| **Product scope** | Product UI · backend services · databases · APIs · CI/CD · observability · operations · commercial product development |
+| **Education** | HSE, Faculty of Computer Science, Software Engineering, Class of 2027 |
+| **Looking for** | Remote project-based work, open-source collaborations, engineering dashboards, internal tools, complex product and fullstack systems |
+
+> I work end-to-end. Frontend engineering remains an important part of my background and experience, but my current positioning is broader: **fullstack product engineering, automation, agentic systems and Linux / Yocto engineering**.
+
+### About Me
 
 🎓 **Education:** HSE, Faculty of Computer Science, Software Engineering, Class of 2027
 
-🚀 **Interests:** Web development, algorithms, performance optimization, interactive UI/UX, Linux systems, embedded engineering, local AI tooling
+🚀 **Interests:** Web development, algorithms, performance optimization, interactive UI/UX, Linux systems, embedded engineering, local AI tooling, automation, agent workflows, product engineering
 
 🌍 **Looking for:** Remote project-based work, open-source collaborations, engineering dashboards, internal tools, and complex frontend systems
 
-⚙️ **Current focus:** React architecture, real-time UI, Yocto Linux, embedded workflows, local AI systems, and developer automation
+⚙️ **Current focus:** Fullstack systems, commercial products, workflow automation, agentic/LLM tooling, Linux / Yocto, embedded workflows, observability, release/recovery engineering, and real-time systems
 
 ---
 
 ## Featured engineering
 
+### Current commercial products and ventures
+
 <div align="center">
 
-<a href="https://github.com/goringich/local-ai-os"><img src="./assets/project-local-ai-os.svg" width="49%" alt="Local AI OS project" /></a>
-<a href="https://github.com/goringich/3d-graph-improvements-"><img src="./assets/project-3d-graph.svg" width="49%" alt="3D Intelligence Graph project" /></a>
+<a href="https://goringich.github.io/local-ai-os/?utm_source=github_profile&utm_medium=organic&utm_campaign=featured"><img src="./assets/project-local-ai-os.svg" width="49%" alt="Local AI OS commercial product" /></a>
+<a href="https://elizabeth-room.ru"><img src="./assets/project-elizabeth.svg" width="49%" alt="Elizabeth commercial product" /></a>
 
 <br />
 
-<a href="https://github.com/goringich/algorithmic-web-course"><img src="./assets/project-algorithms.svg" width="49%" alt="Algorithm Visualization Platform project" /></a>
+<img src="./assets/project-telegram-commerce.svg" width="49%" alt="Telegram commerce automation production system" />
+<img src="./assets/project-leaddesk.svg" width="49%" alt="LeadDesk commercial product" />
+
+<br />
+
+<img src="./assets/project-lithophane.svg" width="70%" alt="Lithophane Cube physical product research and development" />
 
 </div>
 
-### What these projects demonstrate
+| Product | What I am building |
+| --- | --- |
+| **Local AI OS** | A productized Linux / local-AI workflow diagnostic and implementation offer with context recovery, verification, observability and automation. |
+| **Elizabeth** | A live private digital space for couples: local-first, privacy-aware fullstack product with public acquisition, premium/payment flows and production deployment. |
+| **Telegram Commerce Ops** | A private production system that turns Telegram orders into structured catalogs, operational workflows, administration and Excel exports. |
+| **LeadDesk** | A Telegram-first service product for local businesses, focused on leads, operator workflows and structured business data. |
+| **Lithophane Cube** | A physical-product engineering track: replaceable-photo lamp, parametric CAD, 3D printing, electronics and release/validation gates. |
+
+### What these products demonstrate
 
 | Area | Engineering work |
 | --- | --- |
-| **Interactive systems** | Algorithm visualizers, canvas-driven UI, network topology interfaces, graph exploration and complex stateful interfaces |
-| **Real-time systems** | WebSocket-driven dashboards, live state updates, monitoring surfaces and backend-integrated UI |
-| **Linux / embedded** | Yocto Linux, reproducible build environments, system tooling, automation and embedded-oriented workflows |
-| **AI / developer tooling** | Local AI workflows, context systems, observability, controlled execution and developer automation |
+| **Product engineering** | Public funnels, fullstack applications, admin/operator surfaces, pricing and commercial delivery |
+| **Automation & agentic systems** | LLM/agent workflows, context/retrieval, developer automation, controlled execution and verification |
+| **Operational systems** | Telegram workflows, catalog/order processing, exports, admin tooling, observability and recovery |
+| **Linux / infrastructure** | Yocto/Linux, deploy pipelines, containers, CI/CD, self-hosting, production operations |
+| **Physical product R&D** | Parametric CAD, 3D printing, electronics boundaries and evidence-based release gates |
+
+> Public repositories are linked where the code is intentionally public. Private production/commercial repositories are summarized without exposing private source code or secrets.
 
 ---
 
@@ -138,12 +167,14 @@ Developed **responsive landing pages and multi-page websites**, ensuring high-qu
 
 ## What I build
 
-| Interactive UI | Engineering systems | Automation |
+| Product systems | Automation & agentic systems | Systems & infrastructure |
 | --- | --- | --- |
-| Algorithm visualizers | Real-time monitoring dashboards | Telegram Mini Apps |
-| Network topology interfaces | Fullstack services | Local AI tooling |
-| High-performance React apps | Linux / Yocto workflows | Developer automation |
-| UI systems and design systems | Embedded-adjacent tools | 3D printing prototypes |
+| Fullstack services | LLM / agent workflows | Linux / Yocto workflows |
+| Real-time monitoring dashboards | Developer automation | Embedded-adjacent tools |
+| Algorithm visualizers | Local AI tooling | Observability and operations |
+| Network topology interfaces | Telegram Mini Apps | CI/CD and release systems |
+| High-performance React apps | Context / retrieval workflows | 3D printing prototypes |
+| UI systems and design systems | Workflow integration and orchestration | Deployment and recovery tooling |
 
 ---
 
@@ -151,14 +182,14 @@ Developed **responsive landing pages and multi-page websites**, ensuring high-qu
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/React_Architecture-0D1117?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Architecture" />
-<img src="https://img.shields.io/badge/TypeScript_Systems-0D1117?style=for-the-badge&logo=typescript&logoColor=3178C6" alt="TypeScript Systems" />
-<img src="https://img.shields.io/badge/Interactive_Visualization-0D1117?style=for-the-badge&logo=d3dotjs&logoColor=F9A03C" alt="Interactive Visualization" />
-<img src="https://img.shields.io/badge/Real--time_UI-0D1117?style=for-the-badge&logo=socketdotio&logoColor=white" alt="Real-time UI" />
-<img src="https://img.shields.io/badge/Yocto_Linux-0D1117?style=for-the-badge&logo=linux&logoColor=FCC624" alt="Yocto Linux" />
-<img src="https://img.shields.io/badge/Embedded_Workflows-0D1117?style=for-the-badge&logo=espressif&logoColor=E7352C" alt="Embedded Workflows" />
-<img src="https://img.shields.io/badge/Local_AI_Tooling-0D1117?style=for-the-badge&logo=openai&logoColor=white" alt="Local AI Tooling" />
-<img src="https://img.shields.io/badge/Developer_Automation-0D1117?style=for-the-badge&logo=githubactions&logoColor=2088FF" alt="Developer Automation" />
+<img src="https://img.shields.io/badge/Fullstack_Systems-0D1117?style=for-the-badge&logo=stackblitz&logoColor=58A6FF" alt="Fullstack Systems" />
+<img src="https://img.shields.io/badge/Workflow_Automation-0D1117?style=for-the-badge&logo=githubactions&logoColor=00E5FF" alt="Workflow Automation" />
+<img src="https://img.shields.io/badge/Agentic_Workflows-0D1117?style=for-the-badge&logoColor=8B7CFF" alt="Agentic Workflows" />
+<img src="https://img.shields.io/badge/LLM_%2F_Agent_Tooling-0D1117?style=for-the-badge&logo=openai&logoColor=white" alt="LLM and Agent Tooling" />
+<img src="https://img.shields.io/badge/Linux_%2F_Yocto-0D1117?style=for-the-badge&logo=linux&logoColor=FCC624" alt="Linux and Yocto" />
+<img src="https://img.shields.io/badge/Observability-0D1117?style=for-the-badge&logo=prometheus&logoColor=E6522C" alt="Observability" />
+<img src="https://img.shields.io/badge/Real--time_Systems-0D1117?style=for-the-badge&logo=socketdotio&logoColor=white" alt="Real-time Systems" />
+<img src="https://img.shields.io/badge/Commercial_Product_Engineering-0D1117?style=for-the-badge&logo=rocket&logoColor=FF78C6" alt="Commercial Product Engineering" />
 
 </div>
 
@@ -168,7 +199,16 @@ Developed **responsive landing pages and multi-page websites**, ensuring high-qu
 
 <div align="center">
 
-### Frontend
+### Automation, agents and developer systems
+
+<img src="https://img.shields.io/badge/Agentic_Workflows-111827?style=for-the-badge" alt="Agentic Workflows" />
+<img src="https://img.shields.io/badge/LLM_Orchestration-111827?style=for-the-badge&logo=openai&logoColor=white" alt="LLM Orchestration" />
+<img src="https://img.shields.io/badge/Context_%26_Retrieval-111827?style=for-the-badge" alt="Context and Retrieval" />
+<img src="https://img.shields.io/badge/Developer_Automation-111827?style=for-the-badge&logo=githubactions&logoColor=2088FF" alt="Developer Automation" />
+<img src="https://img.shields.io/badge/Observability-111827?style=for-the-badge&logo=prometheus&logoColor=E6522C" alt="Observability" />
+<img src="https://img.shields.io/badge/Local_AI_Tooling-111827?style=for-the-badge&logo=openai&logoColor=white" alt="Local AI Tooling" />
+
+### Web and interface engineering
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white" alt="CSS3" />
@@ -248,34 +288,20 @@ Developed **responsive landing pages and multi-page websites**, ensuring high-qu
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=goringich&theme=tokyonight" alt="GitHub profile details" />
+<img src="./assets/github-snapshot.svg" width="100%" alt="Verified GitHub engineering footprint" />
 
 <br />
-
-<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=goringich&theme=tokyonight" alt="Repos per language" />
-<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=goringich&theme=tokyonight" alt="Most commit language" />
-
 <br />
 
-<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=goringich&theme=tokyonight" alt="GitHub summary stats" />
-<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=goringich&theme=tokyonight&utcOffset=3" alt="Productive time" />
+<a href="https://github.com/goringich/local-ai-os">Local AI OS</a> ·
+<a href="https://github.com/goringich/3d-graph-improvements-">3D Intelligence Graph</a> ·
+<a href="https://github.com/goringich/algorithmic-web-course">Algorithmic Web Course</a> ·
+<a href="https://github.com/goringich/ESP32-P4-M3">ESP32-P4-M3</a> ·
+<a href="https://github.com/goringich/my-custom-cachyos-iso">Custom CachyOS ISO</a>
 
 </div>
 
----
-
-## GitHub statistics
-
-<div align="center">
-
-<img height="180" src="https://github-stats-extended.vercel.app/api?username=goringich&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=58A6FF&text_color=C9D1D9" alt="GitHub stats" />
-<img height="180" src="https://github-stats-extended.vercel.app/api/top-langs/?username=goringich&layout=compact&langs_count=10&hide_border=true&bg_color=0D1117&title_color=00E5FF&text_color=C9D1D9&hide=makefile,cmake,jupyter%20notebook" alt="Top languages" />
-
-<br />
-
-<img src="https://streak-stats.demolab.com?user=goringich&theme=tokyonight&hide_border=true&background=0D1117&ring=00E5FF&fire=00E5FF&currStreakLabel=00E5FF" alt="GitHub streak" />
-
-</div>
+> The previous third-party GitHub totals and language-percentage cards were removed because they were demonstrably inconsistent for this account. The profile now keeps live GitHub/Shields counters only where the meaning is clear, and uses repository links plus GitHub's native contribution calendar as the source of truth.
 
 ---
 
@@ -283,9 +309,7 @@ Developed **responsive landing pages and multi-page websites**, ensuring high-qu
 
 <div align="center">
 
-<a href="https://github.com/goringich"><img src="https://ghchart.rshah.org/00E5FF/goringich" width="100%" alt="GitHub contribution activity" /></a>
-
-<sub>Public GitHub contribution history. GitHub also renders the native contribution calendar directly below this profile README.</sub>
+<a href="https://github.com/goringich"><img src="./assets/github-activity.svg" width="100%" alt="GitHub contribution activity" /></a>
 
 </div>
 
@@ -308,7 +332,7 @@ I am open to interesting projects, open-source collaboration, and technical disc
 
 <br />
 
-**Build · observe · verify · improve**
+**Build · automate · observe · verify · recover · improve**
 
 <sub>Complex systems become useful when they are understandable, testable and recoverable.</sub>
 
