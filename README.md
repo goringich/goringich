@@ -1,33 +1,54 @@
 <div align="center">
 
-<img src="./assets/hero.svg" width="100%" alt="Igor Kim — Fullstack Engineer focused on real-time UI, Linux, Yocto and local AI" />
+<img src="./assets/hero.svg" width="100%" alt="Igor Kim — Frontend and Fullstack Engineer focused on interactive systems, Linux, Yocto and local AI" />
 
 <br />
 
-<a href="https://t.me/a1gorithms"><img src="https://img.shields.io/badge/Telegram-Contact-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Contact on Telegram" /></a>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=2500&pause=850&color=58A6FF&center=true&vCenter=true&width=980&lines=React+%2B+TypeScript+Developer;Fullstack+Developer;Interactive+UI+%26+Algorithm+Visualization;Real-time+Dashboards+%26+WebSocket+Systems;Linux+%2F+Yocto+%2F+Embedded+Engineering;Local+AI+Systems+%26+Developer+Tooling)](https://git.io/typing-svg)
+
+<br />
+
+<a href="https://t.me/a1gorithms"><img src="https://img.shields.io/badge/Telegram-a1gorithms-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" /></a>
+<a href="https://vk.com/gogotka"><img src="https://img.shields.io/badge/VK-gogotka-0077FF?style=for-the-badge&logo=vk&logoColor=white" alt="VK" /></a>
+<a href="https://github.com/goringich"><img src="https://img.shields.io/badge/GitHub-goringich-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 <a href="https://goringich.github.io/local-ai-os/?utm_source=github_profile&utm_medium=organic&utm_campaign=profile"><img src="https://img.shields.io/badge/Local_AI_OS-Explore-0D1117?style=for-the-badge&logo=linux&logoColor=00E5FF" alt="Explore Local AI OS" /></a>
 <a href="https://github.com/goringich/cv"><img src="https://img.shields.io/badge/CV-Repository-1F6FEB?style=for-the-badge&logo=readme&logoColor=white" alt="CV repository" /></a>
 
 <br />
 <br />
 
-<img src="https://img.shields.io/github/followers/goringich?style=flat-square&logo=github&label=Followers&color=1F6FEB" alt="GitHub followers" />
-<img src="https://img.shields.io/github/stars/goringich?style=flat-square&logo=github&label=Stars&color=00A8C6" alt="GitHub stars" />
-<img src="https://komarev.com/ghpvc/?username=goringich&style=flat-square&color=7C5CFF&label=Profile+views" alt="Profile views" />
+<img src="https://komarev.com/ghpvc/?username=goringich&style=for-the-badge&color=1F6FEB" alt="Profile views" />
+<img src="https://img.shields.io/github/followers/goringich?style=for-the-badge&logo=github&color=00E5FF&labelColor=0D1117" alt="GitHub followers" />
+<img src="https://img.shields.io/github/stars/goringich?style=for-the-badge&logo=github&color=00E5FF&labelColor=0D1117" alt="GitHub stars" />
+
+<br />
+<br />
+
+### Frontend Developer | Fullstack Developer | HSE Software Engineering Student
+
+I build **interactive web interfaces**, **algorithm visualizations**, **real-time dashboards**, **fullstack systems**, **Linux tooling**, and **local AI workflows** with React, TypeScript, Python, Go, PostgreSQL, Redis, WebSocket, PixiJS, and React Konva.
+
+<sub><b>Interface · data · automation · infrastructure · observability</b></sub>
+
+<br />
+
+[About](#about-me) · [Featured Engineering](#featured-engineering) · [Experience](#experience) · [Tech Stack](#tech-stack) · [GitHub](#github-overview) · [Work With Me](#work-with-me-one-linux--local-ai-workflow) · [Contact](#contact)
 
 </div>
 
 ---
 
-<div align="center">
+## About Me
 
-### I build systems where interface, data, automation and infrastructure meet.
+> Building across the boundary between product interfaces and engineering systems — from high-performance React visualization to Yocto Linux and local AI workflows.
 
-**Real-time web applications · interactive visualization · fullstack services · Linux / Yocto engineering · local AI workflows**
+🎓 **Education:** HSE, Faculty of Computer Science, Software Engineering, Class of 2027
 
-HSE Software Engineering student, Class of 2027. Currently working with Linux / Yocto engineering at **YADRO / Radio Gigabit**.
+🚀 **Interests:** Web development, algorithms, performance optimization, interactive UI/UX, Linux systems, embedded engineering, local AI tooling
 
-</div>
+🌍 **Looking for:** Remote project-based work, open-source collaborations, engineering dashboards, internal tools, and complex frontend systems
+
+⚙️ **Current focus:** React architecture, real-time UI, Yocto Linux, embedded workflows, local AI systems, and developer automation
 
 ---
 
@@ -55,122 +76,235 @@ HSE Software Engineering student, Class of 2027. Currently working with Linux / 
 
 ---
 
+## Work with me: one Linux / local AI workflow
+
+> [!IMPORTANT]
+> **9,900 RUB diagnostic → optional 49,900 RUB five-working-day implementation pilot.** The diagnostic fee is fully credited toward the pilot.
+
+Have a recurring problem recovering project context, finding answers in private notes, or checking a local AI workflow? I offer a **9,900 RUB diagnostic** for one workflow on your Linux workstation.
+
+We agree the problem, baseline, access boundaries, deliverable and acceptance checks before payment. The diagnostic fee is fully credited toward an optional **49,900 RUB, five-working-day implementation pilot** covering one Linux workstation and up to three projects. Scope and timing are agreed before work starts.
+
+This is a founder-led service. External customer validation is still in progress; there is no promise of full autonomy or guaranteed time savings. Private files and credentials stay outside public case studies.
+
+<div align="center">
+
+<a href="https://t.me/a1gorithms?text=LOCAL%20AI%20OS%20%2F%20diagnostic-2026-07%20%7C%20source%3Dgithub-profile-20260908"><img src="https://img.shields.io/badge/Discuss_your_workflow-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Discuss your workflow on Telegram" /></a>
+
+<br />
+<br />
+
+**[Discuss your workflow on Telegram](https://t.me/a1gorithms?text=LOCAL%20AI%20OS%20%2F%20diagnostic-2026-07%20%7C%20source%3Dgithub-profile-20260908)** — describe the task you repeat, what currently fails, and your deadline. No credentials needed for the first conversation. Russian and English enquiries welcome.
+
+[Service overview](https://goringich.github.io/local-ai-os/?utm_source=github_profile&utm_medium=organic&utm_campaign=local_ai_diagnostic_20260908) · [Scope and pricing](https://github.com/goringich/local-ai-os/blob/main/docs/offer.md) · [Delivery and acceptance boundaries](https://github.com/goringich/local-ai-os/blob/main/docs/proof-cohort.md)
+
+</div>
+
+---
+
 ## Experience
 
-**Yocto / Linux Development — YADRO / Radio Gigabit** · *May 2026 — Present*  
-Working with Yocto Linux, reproducible build environments, embedded-oriented workflows, low-level tooling and Linux development automation.
+### 🏆 Yocto / Linux Development at YADRO / Radio Gigabit
+**May 2026 - Present**
 
-**Fullstack Developer — YADRO / Radio Gigabit** · *November 2025 — May 2026*  
-Built frontend and integration-heavy engineering tools with **React, MobX, Java / Spring**, real-time interfaces and Linux-oriented workflows.
+Currently working with **Yocto Linux**, reproducible build environments, embedded-oriented workflows, low-level tooling, and Linux development automation.
 
-**Frontend Developer — Neimark × YADRO, IoT / NMS** · *January 2025 — November 2025*  
-Developed a network management system for microcontroller-based devices using **React, TypeScript, Redux Toolkit, React Query and PixiJS**, including interactive topology visualization and WebSocket-driven configuration.
+### 🏆 Fullstack Developer at YADRO / Radio Gigabit
+**November 2025 - May 2026**
 
-<details>
-<summary><b>Earlier engineering experience</b></summary>
-<br />
+Worked on fullstack engineering tasks, focusing on frontend (**React, MobX**) development, backend integration (**Java Spring**), real-time interfaces, Linux-oriented workflows, and internal engineering tools.
 
-**Technical Lead & Fullstack Developer** · *7 months*  
-Led an interactive algorithm-learning platform with **React, React Konva, Go, Redis and PostgreSQL**, covering frontend architecture, backend services and visualization performance.
+### 🏆 Frontend Developer at Neimark & YADRO (IoT Project)
+**January 2025 - November 2025**
 
-**Frontend Developer — T-Bank academic project** · *5 months*  
-Worked on a lunch-partner matching service with a focus on UI/UX, performance and interaction flows.
+Developed a **network management system (NMS)** for microcontroller-based devices with real-time monitoring and control via **React + TypeScript + Redux Toolkit + React Query + PixiJS**. Designed **interactive network topology visualization** and implemented **dynamic configuration panels with WebSocket updates**.
 
-**Freelance Frontend Developer** · *4 months*  
-Built responsive websites, landing pages and Telegram applications with API integrations and automation.
+### 🏆 Technical Lead & Fullstack Developer
+**7 months**
 
-</details>
+Led the development of an **interactive web course with an algorithm visualization engine**, managing both frontend (**React, React Konva**) and backend (**Go, Redis, PostgreSQL**) architecture. Designed system architecture, optimized performance, and ensured seamless user interactions.
 
----
+### 🏆 Frontend Developer at T-Bank (Academic Project)
+**5 months**
 
-## Core engineering stack
+Contributed to the development of a **lunch partner matching service**, focusing on UI/UX design, performance optimization, and smooth user interaction flows.
 
-<div align="center">
+### 🏆 Freelance Frontend Developer
+**4 months**
 
-### Product & visualization
-
-<img src="https://img.shields.io/badge/React-0D1117?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-<img src="https://img.shields.io/badge/TypeScript-0D1117?style=for-the-badge&logo=typescript&logoColor=3178C6" alt="TypeScript" />
-<img src="https://img.shields.io/badge/Redux_Toolkit-0D1117?style=for-the-badge&logo=redux&logoColor=764ABC" alt="Redux Toolkit" />
-<img src="https://img.shields.io/badge/MobX-0D1117?style=for-the-badge&logo=mobx&logoColor=FF9955" alt="MobX" />
-<img src="https://img.shields.io/badge/PixiJS-0D1117?style=for-the-badge&logoColor=E91E63" alt="PixiJS" />
-<img src="https://img.shields.io/badge/D3.js-0D1117?style=for-the-badge&logo=d3dotjs&logoColor=F9A03C" alt="D3.js" />
-
-### Backend & data
-
-<img src="https://img.shields.io/badge/Go-0D1117?style=for-the-badge&logo=go&logoColor=00ADD8" alt="Go" />
-<img src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=3776AB" alt="Python" />
-<img src="https://img.shields.io/badge/Node.js-0D1117?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E" alt="Node.js" />
-<img src="https://img.shields.io/badge/PostgreSQL-0D1117?style=for-the-badge&logo=postgresql&logoColor=4169E1" alt="PostgreSQL" />
-<img src="https://img.shields.io/badge/Redis-0D1117?style=for-the-badge&logo=redis&logoColor=FF4438" alt="Redis" />
-<img src="https://img.shields.io/badge/WebSocket-0D1117?style=for-the-badge&logo=socketdotio&logoColor=white" alt="WebSocket" />
-
-### Systems & delivery
-
-<img src="https://img.shields.io/badge/Linux-0D1117?style=for-the-badge&logo=linux&logoColor=FCC624" alt="Linux" />
-<img src="https://img.shields.io/badge/Yocto-0D1117?style=for-the-badge&logo=linuxfoundation&logoColor=00E5FF" alt="Yocto Linux" />
-<img src="https://img.shields.io/badge/Docker-0D1117?style=for-the-badge&logo=docker&logoColor=2496ED" alt="Docker" />
-<img src="https://img.shields.io/badge/Git-0D1117?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" />
-<img src="https://img.shields.io/badge/GitHub_Actions-0D1117?style=for-the-badge&logo=githubactions&logoColor=2088FF" alt="GitHub Actions" />
-<img src="https://img.shields.io/badge/systemd-0D1117?style=for-the-badge&logo=linux&logoColor=white" alt="systemd" />
-
-</div>
-
-<details>
-<summary><b>Additional technologies I have worked with</b></summary>
-<br />
-
-Java / Spring · Flask · C · C++ · PHP · SCSS · MUI · Framer Motion · React Konva · React Query · React Router · gRPC · Protocol Buffers · ESP-IDF · Vite · Webpack · GitLab · WordPress · Figma · React Native · WebAssembly · NumPy · Matplotlib
-
-</details>
+Developed **responsive landing pages and multi-page websites**, ensuring high-quality layouts, SEO optimization, and cross-browser compatibility. Built **Telegram applications** with bot automation, API integrations, and optimized UI/UX.
 
 ---
 
-## GitHub snapshot
+## What I build
 
-<div align="center">
-
-<img height="180" src="https://github-stats-extended.vercel.app/api?username=goringich&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=58A6FF&text_color=C9D1D9" alt="GitHub statistics" />
-<img height="180" src="https://github-stats-extended.vercel.app/api/top-langs/?username=goringich&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=00E5FF&text_color=C9D1D9&hide=makefile,cmake,jupyter%20notebook" alt="Most used repository languages" />
-
-</div>
-
-> GitHub already renders the native contribution calendar directly below the profile README, so this section intentionally avoids duplicating it through an unreliable third-party graph service.
+| Interactive UI | Engineering systems | Automation |
+| --- | --- | --- |
+| Algorithm visualizers | Real-time monitoring dashboards | Telegram Mini Apps |
+| Network topology interfaces | Fullstack services | Local AI tooling |
+| High-performance React apps | Linux / Yocto workflows | Developer automation |
+| UI systems and design systems | Embedded-adjacent tools | 3D printing prototypes |
 
 ---
 
-## Work with me
-
-### Linux / local AI workflow diagnostic — **9,900 ₽**
-
-If a repeated Linux or local-AI workflow keeps losing project context, producing hard-to-verify results, or requiring the same recovery work again and again, I can diagnose **one bounded workflow** on your workstation.
-
-The diagnostic starts with an agreed problem, baseline, access boundary, deliverable and acceptance checks. The **9,900 ₽** fee is fully credited toward an optional **49,900 ₽ / five-working-day implementation pilot** covering one Linux workstation and up to three projects.
-
-This is a founder-led service. External customer validation is still in progress, and I do not promise full autonomy or guaranteed time savings. Private files and credentials stay outside public case studies.
+## Current focus
 
 <div align="center">
 
-<a href="https://t.me/a1gorithms?text=LOCAL%20AI%20OS%20%2F%20diagnostic-2026-07%20%7C%20source%3Dgithub-profile-20260908"><img src="https://img.shields.io/badge/Discuss_your_workflow-Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Discuss a workflow on Telegram" /></a>
-
-<br />
-<br />
-
-[**Service overview**](https://goringich.github.io/local-ai-os/?utm_source=github_profile&utm_medium=organic&utm_campaign=local_ai_diagnostic_20260908) · [**Scope & pricing**](https://github.com/goringich/local-ai-os/blob/main/docs/offer.md) · [**Delivery boundaries**](https://github.com/goringich/local-ai-os/blob/main/docs/proof-cohort.md)
+<img src="https://img.shields.io/badge/React_Architecture-0D1117?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Architecture" />
+<img src="https://img.shields.io/badge/TypeScript_Systems-0D1117?style=for-the-badge&logo=typescript&logoColor=3178C6" alt="TypeScript Systems" />
+<img src="https://img.shields.io/badge/Interactive_Visualization-0D1117?style=for-the-badge&logo=d3dotjs&logoColor=F9A03C" alt="Interactive Visualization" />
+<img src="https://img.shields.io/badge/Real--time_UI-0D1117?style=for-the-badge&logo=socketdotio&logoColor=white" alt="Real-time UI" />
+<img src="https://img.shields.io/badge/Yocto_Linux-0D1117?style=for-the-badge&logo=linux&logoColor=FCC624" alt="Yocto Linux" />
+<img src="https://img.shields.io/badge/Embedded_Workflows-0D1117?style=for-the-badge&logo=espressif&logoColor=E7352C" alt="Embedded Workflows" />
+<img src="https://img.shields.io/badge/Local_AI_Tooling-0D1117?style=for-the-badge&logo=openai&logoColor=white" alt="Local AI Tooling" />
+<img src="https://img.shields.io/badge/Developer_Automation-0D1117?style=for-the-badge&logo=githubactions&logoColor=2088FF" alt="Developer Automation" />
 
 </div>
 
 ---
 
-## Education & contact
-
-- **HSE — Software Engineering**, Class of 2027
-- Open to selected remote engineering projects, open-source collaboration and technical discussions
-- **Telegram:** [@a1gorithms](https://t.me/a1gorithms)
-- **VK:** [gogotka](https://vk.com/gogotka)
-- **GitHub:** [goringich](https://github.com/goringich)
+## Tech stack
 
 <div align="center">
+
+### Frontend
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white" alt="CSS3" />
+<img src="https://img.shields.io/badge/SCSS-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="SCSS" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+<img src="https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white" alt="Redux Toolkit" />
+<img src="https://img.shields.io/badge/MobX-FF9955?style=for-the-badge&logo=mobx&logoColor=white" alt="MobX" />
+<img src="https://img.shields.io/badge/React_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white" alt="React Query" />
+<img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white" alt="React Router" />
+<img src="https://img.shields.io/badge/MUI-007FFF?style=for-the-badge&logo=mui&logoColor=white" alt="MUI" />
+<img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion" />
+<img src="https://img.shields.io/badge/PixiJS-E91E63?style=for-the-badge&logoColor=white" alt="PixiJS" />
+<img src="https://img.shields.io/badge/React_Konva-0D83CD?style=for-the-badge" alt="React Konva" />
+<img src="https://img.shields.io/badge/D3.js-F9A03C?style=for-the-badge&logo=d3dotjs&logoColor=white" alt="D3.js" />
+<img src="https://img.shields.io/badge/Web_Components-29ABE2?style=for-the-badge&logo=webcomponentsdotorg&logoColor=white" alt="Web Components" />
+
+### Backend and databases
+
+<img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
+<img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+<img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
+
+### APIs and communication
+
+<img src="https://img.shields.io/badge/REST_API-02569B?style=for-the-badge" alt="REST API" />
+<img src="https://img.shields.io/badge/WebSocket-010101?style=for-the-badge" alt="WebSocket" />
+<img src="https://img.shields.io/badge/gRPC-244C5A?style=for-the-badge&logo=google&logoColor=white" alt="gRPC" />
+<img src="https://img.shields.io/badge/Protocol_Buffers-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Protocol Buffers" />
+<img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" alt="Axios" />
+
+### Linux, embedded and systems
+
+<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+<img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=archlinux&logoColor=white" alt="Arch Linux" />
+<img src="https://img.shields.io/badge/CachyOS-00A3FF?style=for-the-badge" alt="CachyOS" />
+<img src="https://img.shields.io/badge/Yocto_Project-5C2D91?style=for-the-badge&logo=linux&logoColor=white" alt="Yocto Project" />
+<img src="https://img.shields.io/badge/ESP--IDF-E7352C?style=for-the-badge" alt="ESP-IDF" />
+<img src="https://img.shields.io/badge/Shell-121011?style=for-the-badge&logo=gnubash&logoColor=white" alt="Shell" />
+<img src="https://img.shields.io/badge/systemd-000000?style=for-the-badge&logo=linux&logoColor=white" alt="systemd" />
+
+### Tools and platforms
+
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+<img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+<img src="https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=black" alt="Webpack" />
+<img src="https://img.shields.io/badge/Gulp-CF4647?style=for-the-badge&logo=gulp&logoColor=white" alt="Gulp" />
+<img src="https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress" />
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
+<img src="https://img.shields.io/badge/Photoshop-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white" alt="Photoshop" />
+
+### Additional experience
+
+<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C" />
+<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
+<img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+<img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge" alt="MATLAB" />
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+<img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge" alt="Matplotlib" />
+<img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React Native" />
+<img src="https://img.shields.io/badge/WebAssembly-654FF0?style=for-the-badge&logo=webassembly&logoColor=white" alt="WebAssembly" />
+
+</div>
+
+---
+
+## GitHub overview
+
+<div align="center">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=goringich&theme=tokyonight" alt="GitHub profile details" />
+
+<br />
+
+<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=goringich&theme=tokyonight" alt="Repos per language" />
+<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=goringich&theme=tokyonight" alt="Most commit language" />
+
+<br />
+
+<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=goringich&theme=tokyonight" alt="GitHub summary stats" />
+<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=goringich&theme=tokyonight&utcOffset=3" alt="Productive time" />
+
+</div>
+
+---
+
+## GitHub statistics
+
+<div align="center">
+
+<img height="180" src="https://github-stats-extended.vercel.app/api?username=goringich&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=58A6FF&text_color=C9D1D9" alt="GitHub stats" />
+<img height="180" src="https://github-stats-extended.vercel.app/api/top-langs/?username=goringich&layout=compact&langs_count=10&hide_border=true&bg_color=0D1117&title_color=00E5FF&text_color=C9D1D9&hide=makefile,cmake,jupyter%20notebook" alt="Top languages" />
+
+<br />
+
+<img src="https://streak-stats.demolab.com?user=goringich&theme=tokyonight&hide_border=true&background=0D1117&ring=00E5FF&fire=00E5FF&currStreakLabel=00E5FF" alt="GitHub streak" />
+
+</div>
+
+---
+
+## Contribution activity
+
+<div align="center">
+
+<a href="https://github.com/goringich"><img src="https://ghchart.rshah.org/00E5FF/goringich" width="100%" alt="GitHub contribution activity" /></a>
+
+<sub>Public GitHub contribution history. GitHub also renders the native contribution calendar directly below this profile README.</sub>
+
+</div>
+
+---
+
+## Contact
+
+<div align="center">
+
+<a href="https://t.me/a1gorithms"><img src="https://img.shields.io/badge/Telegram-Contact_me-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Contact me on Telegram" /></a>
+<a href="https://vk.com/gogotka"><img src="https://img.shields.io/badge/VK-Profile-0077FF?style=for-the-badge&logo=vk&logoColor=white" alt="VK profile" /></a>
+<a href="https://github.com/goringich/cv"><img src="https://img.shields.io/badge/CV-Open-1F6FEB?style=for-the-badge&logo=readme&logoColor=white" alt="CV" /></a>
+
+<br />
+<br />
+
+### Thanks for visiting my profile
+
+I am open to interesting projects, open-source collaboration, and technical discussions.
 
 <br />
 
