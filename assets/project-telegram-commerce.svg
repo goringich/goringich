@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300" role="img" aria-labelledby="title desc">
+  <title id="title">Telegram Commerce Ops</title>
+  <desc id="desc">Orders from Telegram chats into structured catalogs, operations and Excel workflows.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070B14"/><stop offset="1" stop-color="#0B1320"/></linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#00E5FF"/></linearGradient>
+  </defs>
+  <rect width="600" height="300" rx="24" fill="url(#bg)"/><rect x="1" y="1" width="598" height="298" rx="23" fill="none" stroke="#58A6FF" stroke-opacity=".22"/><rect width="600" height="5" rx="2.5" fill="url(#bar)"/>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="32" y="38" fill="#58A6FF" font-size="11" font-weight="800" letter-spacing="1.5">COMMERCIAL · PRIVATE</text><text x="32" y="88" fill="#F0F6FC" font-size="29" font-weight="820">Telegram Commerce Ops</text><rect x="32" y="103" width="72" height="3" rx="1.5" fill="url(#bar)"/>
+    <text x="32" y="150" fill="#9DA7B3" font-size="15">Orders from Telegram chats into structured</text><text x="32" y="174" fill="#9DA7B3" font-size="15">catalogs, operations and Excel workflows.</text>
+    <rect x="32" y="244" width="82.4" height="30" rx="9" fill="#101B2C" stroke="#58A6FF" stroke-opacity=".18"/><text x="73.2" y="263" text-anchor="middle" fill="#9FB2C7" font-size="10.5" font-weight="700">TELEGRAM</text><rect x="123.4" y="244" width="70" height="30" rx="9" fill="#101B2C" stroke="#58A6FF" stroke-opacity=".18"/><text x="158.4" y="263" text-anchor="middle" fill="#9FB2C7" font-size="10.5" font-weight="700">OPS</text><rect x="202.4" y="244" width="97" height="30" rx="9" fill="#101B2C" stroke="#58A6FF" stroke-opacity=".18"/><text x="250.9" y="263" text-anchor="middle" fill="#9FB2C7" font-size="10.5" font-weight="700">AUTOMATION</text>
+    <rect x="431" y="213" width="121" height="27" rx="13.5" fill="#0F1B2B" stroke="#00E5FF" stroke-opacity=".28"/><circle cx="447" cy="226.5" r="4" fill="#00E5FF"/><text x="458" y="230.5" fill="#B8C2D0" font-size="10" font-weight="800">PRODUCTION SYSTEM</text>
+  </g>
+  <g transform="translate(420 52)"><rect width="132" height="132" rx="28" fill="#0C1726" stroke="#58A6FF" stroke-opacity=".34"/><rect x="24" y="27" width="84" height="66" rx="14" fill="#0F2031" stroke="#58A6FF" stroke-opacity=".55"/><path d="M39 48H92M39 64H80M39 80H70" stroke="#B7C1CF" stroke-width="4" stroke-linecap="round"/><path d="M53 93L47 108L69 94" fill="#0F2031" stroke="#58A6FF" stroke-opacity=".55" stroke-width="2"/><circle cx="98" cy="98" r="18" fill="#11182A" stroke="#00E5FF" stroke-width="2"/><path d="M90 98L96 104L107 91" fill="none" stroke="#00E5FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
