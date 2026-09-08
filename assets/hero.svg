@@ -1,92 +1,114 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
-  <title id="title">Igor Kim — Fullstack Engineer</title>
-  <desc id="desc">Fullstack engineer focused on real-time interfaces, Linux and Yocto systems, and local AI tooling.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">Igor Kim — Frontend and Fullstack Engineer</title>
+  <desc id="desc">Engineering profile focused on interactive UI, real-time systems, Linux and Yocto, embedded workflows, and local AI tooling.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#070b14"/>
-      <stop offset="0.48" stop-color="#0d1526"/>
-      <stop offset="1" stop-color="#08111d"/>
+      <stop offset="0" stop-color="#060914"/>
+      <stop offset="0.46" stop-color="#0b1424"/>
+      <stop offset="1" stop-color="#0a1020"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#58a6ff"/>
-      <stop offset="0.52" stop-color="#00e5ff"/>
-      <stop offset="1" stop-color="#7c5cff"/>
+      <stop offset="0.46" stop-color="#00e5ff"/>
+      <stop offset="0.76" stop-color="#8b7cff"/>
+      <stop offset="1" stop-color="#ff78c6"/>
     </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#00e5ff" stop-opacity="0.2"/>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#00e5ff" stop-opacity="0.22"/>
       <stop offset="1" stop-color="#00e5ff" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#58a6ff" stroke-opacity="0.055" stroke-width="1"/>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#79c0ff" stroke-opacity="0.045" stroke-width="1"/>
     </pattern>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="12" result="blur"/>
+      <feOffset dy="8" result="offset"/>
+      <feColorMatrix in="offset" values="0 0 0 0 0 0 0 0 0 0.07 0 0 0 0 0.12 0 0 0 .55 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="nodeGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
-  <rect width="1200" height="420" rx="28" fill="url(#grid)"/>
-  <ellipse cx="945" cy="188" rx="310" ry="250" fill="url(#glow)"/>
-  <rect x="1" y="1" width="1198" height="418" rx="27" fill="none" stroke="#58a6ff" stroke-opacity="0.22"/>
+  <rect width="1200" height="470" rx="30" fill="url(#bg)"/>
+  <rect width="1200" height="470" rx="30" fill="url(#grid)"/>
+  <ellipse cx="980" cy="160" rx="330" ry="280" fill="url(#glowA)"/>
+  <ellipse cx="730" cy="420" rx="420" ry="200" fill="url(#glowB)"/>
+  <rect x="1" y="1" width="1198" height="468" rx="29" fill="none" stroke="#58a6ff" stroke-opacity="0.24"/>
+  <rect x="20" y="20" width="1160" height="430" rx="24" fill="none" stroke="#ffffff" stroke-opacity="0.035"/>
 
-  <g transform="translate(64 55)">
-    <circle cx="7" cy="7" r="7" fill="#3fb950"/>
-    <text x="26" y="12" fill="#8b949e" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="2">AVAILABLE FOR SELECTED ENGINEERING WORK</text>
+  <g transform="translate(62 52)">
+    <g font-family="Inter,Segoe UI,Arial,sans-serif">
+      <rect width="345" height="32" rx="16" fill="#0f1c2e" stroke="#3fb950" stroke-opacity="0.32"/>
+      <circle cx="18" cy="16" r="5" fill="#3fb950"/>
+      <text x="32" y="21" fill="#9da7b3" font-size="12" font-weight="700" letter-spacing="1.35">ENGINEERING · SYSTEMS · VISUALIZATION</text>
 
-    <text x="0" y="103" fill="#f0f6fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="72" font-weight="800" letter-spacing="-2">IGOR KIM</text>
-    <rect x="0" y="122" width="520" height="5" rx="2.5" fill="url(#accent)"/>
+      <text x="0" y="111" fill="#f0f6fc" font-size="76" font-weight="850" letter-spacing="-2.4">IGOR KIM</text>
+      <rect x="0" y="129" width="586" height="5" rx="2.5" fill="url(#accent)"/>
 
-    <text x="0" y="168" fill="#c9d1d9" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="650">Fullstack Engineer · Real-time UI · Linux / Yocto · Local AI</text>
-    <text x="0" y="205" fill="#8b949e" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">I build interactive systems that connect product UI, backend services,</text>
-    <text x="0" y="232" fill="#8b949e" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">automation, observability and low-level engineering workflows.</text>
+      <text x="0" y="177" fill="#d8dee9" font-size="23" font-weight="700">Frontend Developer · Fullstack Developer · Software Engineering</text>
+      <text x="0" y="214" fill="#9da7b3" font-size="17">Interactive UI · real-time dashboards · algorithms · Linux / Yocto · embedded</text>
+      <text x="0" y="241" fill="#9da7b3" font-size="17">Local AI systems · developer tooling · automation · observability</text>
+    </g>
 
-    <g transform="translate(0 274)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="650">
-      <rect width="176" height="42" rx="12" fill="#111b2e" stroke="#58a6ff" stroke-opacity="0.28"/>
-      <text x="18" y="27" fill="#79c0ff">HSE SOFTWARE '27</text>
-
-      <g transform="translate(190 0)">
-        <rect width="206" height="42" rx="12" fill="#111b2e" stroke="#00e5ff" stroke-opacity="0.26"/>
-        <text x="18" y="27" fill="#56d4dd">YADRO / RADIO GIGABIT</text>
+    <g transform="translate(0 283)" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12.5" font-weight="700">
+      <g>
+        <rect width="164" height="42" rx="11" fill="#101b2c" stroke="#58a6ff" stroke-opacity="0.28"/>
+        <text x="82" y="26" text-anchor="middle" fill="#79c0ff">HSE · CLASS OF 2027</text>
       </g>
+      <g transform="translate(178 0)">
+        <rect width="207" height="42" rx="11" fill="#101b2c" stroke="#00e5ff" stroke-opacity="0.28"/>
+        <text x="103.5" y="26" text-anchor="middle" fill="#56d4dd">YADRO / RADIO GIGABIT</text>
+      </g>
+      <g transform="translate(399 0)">
+        <rect width="185" height="42" rx="11" fill="#101b2c" stroke="#8b7cff" stroke-opacity="0.3"/>
+        <text x="92.5" y="26" text-anchor="middle" fill="#b7a6ff">REACT · TS · GO · AI</text>
+      </g>
+    </g>
 
-      <g transform="translate(410 0)">
-        <rect width="232" height="42" rx="12" fill="#111b2e" stroke="#7c5cff" stroke-opacity="0.28"/>
-        <text x="18" y="27" fill="#b7a6ff">REACT · TS · GO · PYTHON</text>
+    <text x="0" y="367" fill="#536173" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12">build → observe → verify → improve</text>
+  </g>
+
+  <g transform="translate(742 58)" filter="url(#shadow)">
+    <rect width="392" height="344" rx="24" fill="#0b1321" stroke="#58a6ff" stroke-opacity="0.22"/>
+    <rect x="18" y="18" width="356" height="34" rx="10" fill="#0f1b2d"/>
+    <circle cx="37" cy="35" r="4" fill="#ff7b72"/>
+    <circle cx="51" cy="35" r="4" fill="#d29922"/>
+    <circle cx="65" cy="35" r="4" fill="#3fb950"/>
+    <text x="90" y="40" fill="#738196" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11">system.graph / live</text>
+
+    <g transform="translate(28 78)" stroke-linecap="round" stroke-linejoin="round">
+      <g stroke="#58a6ff" stroke-opacity="0.28" stroke-width="1.8">
+        <path d="M44 42L151 18L258 58L301 147L242 231L129 247L31 176Z"/>
+        <path d="M44 42L242 231M151 18L129 247M258 58L31 176M301 147L44 42"/>
+        <path d="M44 42L129 247M151 18L242 231M258 58L129 247M31 176L242 231"/>
+      </g>
+      <g filter="url(#nodeGlow)">
+        <circle cx="44" cy="42" r="7" fill="#58a6ff"/>
+        <circle cx="151" cy="18" r="7" fill="#00e5ff"/>
+        <circle cx="258" cy="58" r="7" fill="#8b7cff"/>
+        <circle cx="301" cy="147" r="7" fill="#ff78c6"/>
+        <circle cx="242" cy="231" r="7" fill="#58a6ff"/>
+        <circle cx="129" cy="247" r="7" fill="#00e5ff"/>
+        <circle cx="31" cy="176" r="7" fill="#8b7cff"/>
+        <circle cx="166" cy="136" r="14" fill="#f0f6fc"/>
+      </g>
+      <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" font-weight="800">
+        <text x="58" y="47" fill="#79c0ff">UI</text>
+        <text x="164" y="23" fill="#56d4dd">AI</text>
+        <text x="272" y="63" fill="#b7a6ff">DATA</text>
+        <text x="277" y="169" fill="#ff9bd4">RT</text>
+        <text x="255" y="236" fill="#79c0ff">API</text>
+        <text x="142" y="252" fill="#56d4dd">LINUX</text>
+        <text x="5" y="198" fill="#b7a6ff">EMBEDDED</text>
+        <text x="146" y="140" fill="#07101d">SYS</text>
       </g>
     </g>
   </g>
-
-  <g transform="translate(820 76)" stroke-linecap="round" stroke-linejoin="round">
-    <g stroke="#58a6ff" stroke-opacity="0.25" stroke-width="2">
-      <path d="M56 48 L180 24 L272 84 L236 196 L116 238 L30 164 Z"/>
-      <path d="M56 48 L116 238 M180 24 L236 196 M272 84 L30 164"/>
-      <path d="M56 48 L236 196 M180 24 L30 164 M272 84 L116 238"/>
-    </g>
-
-    <g filter="url(#softGlow)">
-      <circle cx="56" cy="48" r="8" fill="#58a6ff"/>
-      <circle cx="180" cy="24" r="7" fill="#00e5ff"/>
-      <circle cx="272" cy="84" r="8" fill="#7c5cff"/>
-      <circle cx="236" cy="196" r="7" fill="#58a6ff"/>
-      <circle cx="116" cy="238" r="8" fill="#00e5ff"/>
-      <circle cx="30" cy="164" r="7" fill="#7c5cff"/>
-      <circle cx="150" cy="132" r="13" fill="#f0f6fc"/>
-    </g>
-
-    <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" font-weight="700">
-      <text x="74" y="53" fill="#79c0ff">UI</text>
-      <text x="194" y="29" fill="#56d4dd">AI</text>
-      <text x="286" y="89" fill="#b7a6ff">DATA</text>
-      <text x="250" y="201" fill="#79c0ff">API</text>
-      <text x="130" y="243" fill="#56d4dd">LINUX</text>
-      <text x="0" y="150" fill="#b7a6ff">RT</text>
-      <text x="130" y="137" fill="#0d1117">SYS</text>
-    </g>
-  </g>
-
-  <text x="1136" y="388" text-anchor="end" fill="#30363d" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12">goringich / build · observe · verify</text>
 </svg>
