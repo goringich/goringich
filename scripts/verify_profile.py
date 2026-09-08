@@ -21,8 +21,12 @@ AUTOLINK_URL_RE = re.compile(r"<((?:https?://)[^>\s]+)>")
 LOCAL_IMAGE_RE = re.compile(r"<(?:img|source)[^>]+(?:src|srcset)=\"(\.?/[^\"?# ]+)\"", re.IGNORECASE)
 
 BANNED_ENDPOINTS = {
-  "github-readme-stats.vercel.app": "github-readme-stats is no longer maintained; use github-stats-extended or generated assets",
-  "github-readme-activity-graph.vercel.app": "the upstream activity graph deployment is currently unavailable; use a verified alternative",
+  "github-readme-stats.vercel.app": "github-readme-stats is no longer maintained; use verified/local profile assets",
+  "github-readme-activity-graph.vercel.app": "the upstream activity graph deployment is unavailable; use GitHub's native calendar",
+  "github-profile-summary-cards.vercel.app": "third-party inferred profile statistics were shown to be inconsistent for this account",
+  "github-stats-extended.vercel.app": "third-party inferred totals and language percentages were shown to be inconsistent for this account",
+  "ghchart.rshah.org": "the custom heatmap was replaced by repository-owned activity art and GitHub's native calendar",
+  "streak-stats.demolab.com": "third-party streak inference is not used as CV evidence",
   "readme-typing-svg.herokuapp.com": "the legacy Heroku typing endpoint should not be used",
   "capsule-render.vercel.app": "the profile hero is intentionally self-hosted in this repository",
 }
@@ -33,14 +37,35 @@ SOFT_HOSTS = {
 }
 
 IMAGE_HOSTS = {
-  "ghchart.rshah.org",
-  "github-profile-summary-cards.vercel.app",
-  "github-stats-extended.vercel.app",
   "img.shields.io",
   "komarev.com",
   "readme-typing-svg.demolab.com",
-  "streak-stats.demolab.com",
 }
+
+REQUIRED_PROFILE_MARKERS = (
+  "Fullstack Engineer · Automation & Agentic Systems",
+  "## Professional profile / CV",
+  "### Current commercial products and ventures",
+  "**Local AI OS**",
+  "**Elizabeth**",
+  "**Telegram Commerce Ops**",
+  "**LeadDesk**",
+  "**Lithophane Cube**",
+  "### Automation, agents and developer systems",
+  "LLM/agent orchestration, context and retrieval",
+  "### 🏆 Yocto / Linux Development at YADRO / Radio Gigabit",
+  "### 🏆 Fullstack Developer at YADRO / Radio Gigabit",
+  "### 🏆 Frontend Developer at Neimark & YADRO (IoT Project)",
+  "### 🏆 Technical Lead & Fullstack Developer",
+  "### 🏆 Frontend Developer at T-Bank (Academic Project)",
+  "### 🏆 Freelance Frontend Developer",
+  "## Tech stack",
+  "## Contact",
+)
+
+FORBIDDEN_POSITIONING = (
+  "### Frontend Developer | Fullstack Developer | HSE Software Engineering Student",
+)
 
 
 def fail(message: str) -> None:
@@ -92,6 +117,24 @@ def validate_local_assets(text: str) -> bool:
   return success
 
 
+def validate_profile_content(text: str) -> bool:
+  success = True
+
+  for marker in REQUIRED_PROFILE_MARKERS:
+    if marker not in text:
+      fail(f"required CV/profile content is missing: {marker}")
+      success = False
+
+  for marker in FORBIDDEN_POSITIONING:
+    if marker in text:
+      fail(f"obsolete frontend-first positioning returned: {marker}")
+      success = False
+
+  if success:
+    ok("CV positioning and information-preservation markers")
+  return success
+
+
 def validate_banned_endpoints(urls: list[str]) -> bool:
   success = True
   for url in urls:
@@ -105,7 +148,7 @@ def validate_banned_endpoints(urls: list[str]) -> bool:
 def request_headers(url: str) -> tuple[int, str]:
   parsed = urllib.parse.urlparse(url)
   headers = {
-    "User-Agent": "goringich-profile-health/1.1 (+https://github.com/goringich/goringich)",
+    "User-Agent": "goringich-profile-health/1.2 (+https://github.com/goringich/goringich)",
     "Accept": "*/*",
   }
 
@@ -196,6 +239,7 @@ def main() -> int:
 
   checks = [
     validate_local_assets(text),
+    validate_profile_content(text),
     validate_banned_endpoints(urls),
     validate_repository_hygiene(),
     validate_external_urls(urls),
