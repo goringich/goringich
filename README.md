@@ -94,7 +94,7 @@ Built responsive websites, landing pages and Telegram applications with API inte
 <img src="https://img.shields.io/badge/Redux_Toolkit-0D1117?style=for-the-badge&logo=redux&logoColor=764ABC" alt="Redux Toolkit" />
 <img src="https://img.shields.io/badge/MobX-0D1117?style=for-the-badge&logo=mobx&logoColor=FF9955" alt="MobX" />
 <img src="https://img.shields.io/badge/PixiJS-0D1117?style=for-the-badge&logoColor=E91E63" alt="PixiJS" />
-<img src="https://img.shields.io/badge/D3.js-0D1117?style=for-the-badge&logo=d3&logoColor=F9A03C" alt="D3.js" />
+<img src="https://img.shields.io/badge/D3.js-0D1117?style=for-the-badge&logo=d3dotjs&logoColor=F9A03C" alt="D3.js" />
 
 ### Backend & data
 
@@ -126,18 +126,16 @@ Java / Spring · Flask · C · C++ · PHP · SCSS · MUI · Framer Motion · Rea
 
 ---
 
-## GitHub activity
+## GitHub snapshot
 
 <div align="center">
 
 <img height="180" src="https://github-stats-extended.vercel.app/api?username=goringich&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=58A6FF&text_color=C9D1D9" alt="GitHub statistics" />
 <img height="180" src="https://github-stats-extended.vercel.app/api/top-langs/?username=goringich&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=00E5FF&text_color=C9D1D9&hide=makefile,cmake,jupyter%20notebook" alt="Most used repository languages" />
 
-<br />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=goringich&theme=tokyo-night&hide_border=true&area=true&bg_color=0D1117&line=00E5FF&point=FFFFFF&color=C9D1D9&title_color=00E5FF&custom_title=Contribution%20Activity" width="100%" alt="GitHub contribution activity graph" />
-
 </div>
+
+> GitHub already renders the native contribution calendar directly below the profile README, so this section intentionally avoids duplicating it through an unreliable third-party graph service.
 
 ---
 
