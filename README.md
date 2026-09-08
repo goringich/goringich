@@ -30,6 +30,20 @@ I build **interactive web interfaces**, **algorithm visualizations**, **real-tim
 
 ---
 
+## Work with me: one Linux / local AI workflow
+
+Have a recurring problem recovering project context, finding answers in private notes, or checking a local AI workflow? I offer a **9,900 RUB diagnostic** for one workflow on your Linux workstation.
+
+We agree the problem, baseline, access boundaries, deliverable and acceptance checks before payment. The diagnostic fee is fully credited toward an optional **49,900 RUB, five-working-day implementation pilot** covering one Linux workstation and up to three projects. Scope and timing are agreed before work starts.
+
+This is a founder-led service. External customer validation is still in progress; there is no promise of full autonomy or guaranteed time savings. Private files and credentials stay outside public case studies.
+
+**[Discuss your workflow on Telegram](https://t.me/a1gorithms?text=LOCAL%20AI%20OS%20%2F%20diagnostic-2026-07%20%7C%20source%3Dgithub-profile-20260908)** — describe the task you repeat, what currently fails, and your deadline. No credentials needed for the first conversation. Russian and English enquiries welcome.
+
+[Service overview](https://goringich.github.io/local-ai-os/?utm_source=github_profile&utm_medium=organic&utm_campaign=local_ai_diagnostic_20260908) · [Scope and pricing](https://github.com/goringich/local-ai-os/blob/main/docs/offer.md) · [Delivery and acceptance boundaries](https://github.com/goringich/local-ai-os/blob/main/docs/proof-cohort.md)
+
+---
+
 ## About Me
 
 🎓 **Education:** HSE, Faculty of Computer Science, Software Engineering, Class of 2027
