@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="250" viewBox="0 0 560 250" role="img" aria-labelledby="title desc">
+  <title id="title">3D Intelligence Graph</title>
+  <desc id="desc">A typed 3D explorer for knowledge, architecture, runtime state and dependency impact.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101020"/>
+      <stop offset="1" stop-color="#15182c"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="558" height="248" rx="22" fill="url(#bg)" stroke="#7c5cff" stroke-opacity="0.38"/>
+  <rect x="26" y="26" width="146" height="28" rx="9" fill="#241c44"/>
+  <text x="99" y="45" text-anchor="middle" fill="#b7a6ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" font-weight="800" letter-spacing="1.1">KNOWLEDGE SYSTEMS</text>
+  <text x="26" y="92" fill="#f0f6fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="28" font-weight="800">3D Intelligence Graph</text>
+  <rect x="26" y="106" width="238" height="4" rx="2" fill="url(#bar)"/>
+  <text x="26" y="142" fill="#aeb8c5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">Typed 3D exploration of knowledge, architecture, runtime</text>
+  <text x="26" y="164" fill="#aeb8c5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">state, dependencies, impact paths and graph health.</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="700">
+    <rect x="26" y="194" width="89" height="28" rx="8" fill="#1c2035"/><text x="70.5" y="212" text-anchor="middle" fill="#b7a6ff">TYPESCRIPT</text>
+    <rect x="123" y="194" width="79" height="28" rx="8" fill="#1c2035"/><text x="162.5" y="212" text-anchor="middle" fill="#79c0ff">OBSIDIAN</text>
+    <rect x="210" y="194" width="64" height="28" rx="8" fill="#1c2035"/><text x="242" y="212" text-anchor="middle" fill="#56d4dd">GRAPH</text>
+    <rect x="282" y="194" width="92" height="28" rx="8" fill="#1c2035"/><text x="328" y="212" text-anchor="middle" fill="#b7a6ff">ALGORITHMS</text>
+  </g>
+  <g transform="translate(444 25)" stroke="#8b7cff" stroke-width="1.8" stroke-opacity="0.62" fill="#13182b">
+    <path d="M44 8L82 33L72 78L27 87L5 49Z"/>
+    <path d="M44 8L27 87M82 33L5 49M72 78L44 8" opacity="0.55"/>
+    <circle cx="44" cy="8" r="6" fill="#7c5cff" stroke="none"/>
+    <circle cx="82" cy="33" r="6" fill="#00e5ff" stroke="none"/>
+    <circle cx="72" cy="78" r="6" fill="#58a6ff" stroke="none"/>
+    <circle cx="27" cy="87" r="6" fill="#7c5cff" stroke="none"/>
+    <circle cx="5" cy="49" r="6" fill="#00e5ff" stroke="none"/>
+  </g>
+</svg>
