@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="250" viewBox="0 0 560 250" role="img" aria-labelledby="title desc">
+  <title id="title">Algorithm Visualization Platform</title>
+  <desc id="desc">A fullstack interactive learning platform with algorithm visualization and backend services.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1320"/>
+      <stop offset="1" stop-color="#11192a"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="0.55" stop-color="#00e5ff"/>
+      <stop offset="1" stop-color="#3fb950"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="558" height="248" rx="22" fill="url(#bg)" stroke="#58a6ff" stroke-opacity="0.35"/>
+  <rect x="26" y="26" width="166" height="28" rx="9" fill="#10253c"/>
+  <text x="109" y="45" text-anchor="middle" fill="#79c0ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" font-weight="800" letter-spacing="1.1">FULLSTACK / VISUAL</text>
+  <text x="26" y="90" fill="#f0f6fc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="26" font-weight="800">Algorithm Visualization Platform</text>
+  <rect x="26" y="106" width="260" height="4" rx="2" fill="url(#bar)"/>
+  <text x="26" y="142" fill="#aeb8c5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">Interactive algorithm learning with a visualization engine,</text>
+  <text x="26" y="164" fill="#aeb8c5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">frontend architecture and fullstack service layer.</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="700">
+    <rect x="26" y="194" width="64" height="28" rx="8" fill="#162033"/><text x="58" y="212" text-anchor="middle" fill="#79c0ff">REACT</text>
+    <rect x="98" y="194" width="89" height="28" rx="8" fill="#162033"/><text x="142.5" y="212" text-anchor="middle" fill="#79c0ff">TYPESCRIPT</text>
+    <rect x="195" y="194" width="49" height="28" rx="8" fill="#162033"/><text x="219.5" y="212" text-anchor="middle" fill="#56d4dd">GO</text>
+    <rect x="252" y="194" width="86" height="28" rx="8" fill="#162033"/><text x="295" y="212" text-anchor="middle" fill="#b7a6ff">POSTGRES</text>
+    <rect x="346" y="194" width="64" height="28" rx="8" fill="#162033"/><text x="378" y="212" text-anchor="middle" fill="#ff9b85">REDIS</text>
+  </g>
+  <g transform="translate(452 27)">
+    <rect x="0" y="50" width="12" height="34" rx="4" fill="#58a6ff"/>
+    <rect x="20" y="34" width="12" height="50" rx="4" fill="#00e5ff"/>
+    <rect x="40" y="15" width="12" height="69" rx="4" fill="#7c5cff"/>
+    <rect x="60" y="42" width="12" height="42" rx="4" fill="#3fb950"/>
+    <path d="M2 26C24 9 41 3 67 0" fill="none" stroke="#f0f6fc" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>
