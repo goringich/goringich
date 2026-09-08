@@ -15,11 +15,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 
-HTTP_URL_RE = re.compile(r"https?://[^\s\"'<>]+")
+MARKDOWN_URL_RE = re.compile(r"\]\((https?://[^)\s]+)\)")
+HTML_URL_RE = re.compile(r"(?:href|src|srcset)=\"(https?://[^\"]+)\"", re.IGNORECASE)
+AUTOLINK_URL_RE = re.compile(r"<((?:https?://)[^>\s]+)>")
 LOCAL_IMAGE_RE = re.compile(r"<(?:img|source)[^>]+(?:src|srcset)=\"(\.?/[^\"?# ]+)\"", re.IGNORECASE)
 
 BANNED_ENDPOINTS = {
   "github-readme-stats.vercel.app": "github-readme-stats is no longer maintained; use github-stats-extended or generated assets",
+  "github-readme-activity-graph.vercel.app": "the upstream activity graph deployment is currently unavailable; use a verified alternative",
   "readme-typing-svg.herokuapp.com": "the legacy Heroku typing endpoint should not be used",
   "capsule-render.vercel.app": "the profile hero is intentionally self-hosted in this repository",
 }
@@ -30,10 +33,13 @@ SOFT_HOSTS = {
 }
 
 IMAGE_HOSTS = {
+  "ghchart.rshah.org",
+  "github-profile-summary-cards.vercel.app",
+  "github-stats-extended.vercel.app",
   "img.shields.io",
   "komarev.com",
-  "github-stats-extended.vercel.app",
-  "github-readme-activity-graph.vercel.app",
+  "readme-typing-svg.demolab.com",
+  "streak-stats.demolab.com",
 }
 
 
@@ -51,9 +57,9 @@ def ok(message: str) -> None:
 
 def extract_urls(text: str) -> list[str]:
   urls: set[str] = set()
-  for match in HTTP_URL_RE.findall(text):
-    cleaned = match.rstrip(").,;]}")
-    urls.add(cleaned.replace("&amp;", "&"))
+  for pattern in (MARKDOWN_URL_RE, HTML_URL_RE, AUTOLINK_URL_RE):
+    for match in pattern.findall(text):
+      urls.add(match.replace("&amp;", "&"))
   return sorted(urls)
 
 
@@ -99,7 +105,7 @@ def validate_banned_endpoints(urls: list[str]) -> bool:
 def request_headers(url: str) -> tuple[int, str]:
   parsed = urllib.parse.urlparse(url)
   headers = {
-    "User-Agent": "goringich-profile-health/1.0 (+https://github.com/goringich/goringich)",
+    "User-Agent": "goringich-profile-health/1.1 (+https://github.com/goringich/goringich)",
     "Accept": "*/*",
   }
 
