@@ -77,9 +77,6 @@ I work with **LLM/agent orchestration, context and retrieval, local-model toolin
 <img src="./assets/project-telegram-commerce.svg" width="49%" alt="Telegram commerce automation production system" />
 <img src="./assets/project-leaddesk.svg" width="49%" alt="LeadDesk commercial product" />
 
-<br />
-
-<img src="./assets/project-lithophane.svg" width="70%" alt="Lithophane Cube physical product research and development" />
 
 </div>
 
@@ -89,7 +86,6 @@ I work with **LLM/agent orchestration, context and retrieval, local-model toolin
 | **Elizabeth** | A live private digital space for couples: local-first, privacy-aware fullstack product with public acquisition, premium/payment flows and production deployment. |
 | **Telegram Commerce Ops** | A private production system that turns Telegram orders into structured catalogs, operational workflows, administration and Excel exports. |
 | **LeadDesk** | A Telegram-first service product for local businesses, focused on leads, operator workflows and structured business data. |
-| **Lithophane Cube** | A physical-product engineering track: replaceable-photo lamp, parametric CAD, 3D printing, electronics and release/validation gates. |
 
 ### What these products demonstrate
 
