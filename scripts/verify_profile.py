@@ -50,7 +50,6 @@ REQUIRED_PROFILE_MARKERS = (
   "**Elizabeth**",
   "**Telegram Commerce Ops**",
   "**LeadDesk**",
-  "**Lithophane Cube**",
   "### Automation, agents and developer systems",
   "LLM/agent orchestration, context and retrieval",
   "### 🏆 Yocto / Linux Development at YADRO / Radio Gigabit",
@@ -133,6 +132,39 @@ def validate_profile_content(text: str) -> bool:
   if success:
     ok("CV positioning and information-preservation markers")
   return success
+
+
+def validate_3d_ownership_boundary(text: str) -> bool:
+  lines = text.splitlines()
+  heading = "### Current commercial products and ventures"
+
+  try:
+    start = lines.index(heading) + 1
+  except ValueError:
+    fail("commercial portfolio section missing")
+    return False
+
+  end = next(
+    (
+      index
+      for index in range(start, len(lines))
+      if lines[index].startswith(("## ", "### "))
+    ),
+    len(lines),
+  )
+
+  section = "\n".join(lines[start:end])
+
+  if "lithophane" in section.casefold():
+    fail("Lithophane reintroduced into commercial portfolio")
+    return False
+
+  if (ROOT / "assets/project-lithophane.svg").exists():
+    fail("obsolete commercial Lithophane card remains")
+    return False
+
+  ok("canonical System 3D ownership boundary")
+  return True
 
 
 def validate_banned_endpoints(urls: list[str]) -> bool:
@@ -240,6 +272,7 @@ def main() -> int:
   checks = [
     validate_local_assets(text),
     validate_profile_content(text),
+    validate_3d_ownership_boundary(text),
     validate_banned_endpoints(urls),
     validate_repository_hygiene(),
     validate_external_urls(urls),
